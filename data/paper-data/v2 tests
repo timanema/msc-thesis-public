@@ -1,0 +1,205 @@
+TPC-H:
+    49.156, 49.101 => 49.1285
+    3.1016, 2.7131 => 2.90735
+GDelt:
+    49.795
+    1.6717
+DBText:
+	48.754, 49.621, 49.975, 49.222, 49.010, 49.793, 51.474 => 49.692714285714
+	1.9273, 2.0812, 1.5311, 1.9774, 1.7948, 1.5376, 1.4952 => 1.7635142857143
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 1897922560
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/customer-2gb/customer-id-2gb-1.txt
+	Compression:
+		Duration (us): 38618
+		Throughput (GB/s): 49.156
+		Compressed size: 611914543
+	Decompression:
+		Duration (us): 1291232
+		Throughput (GB/s): 1.470
+		Ratio: 3.1016
+	Compression phases:
+		Table generation (GB/s, us): 537.047 (3534)
+		Precomputation (GB/s, us): 323.988 (5858)
+		Encoding (GB/s, us): 103.322 (18369)
+		Postprocessing (GB/s, us): 183.073 (10367)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 1979187200
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 40318
+		Throughput (GB/s): 49.101
+		Compressed size: 729485919
+	Decompression:
+		Duration (us): 4031076
+		Throughput (GB/s): 0.491
+		Ratio: 2.7131
+	Compression phases:
+		Table generation (GB/s, us): 385.731 (5131)
+		Precomputation (GB/s, us): 423.175 (4677)
+		Encoding (GB/s, us): 103.422 (19137)
+		Postprocessing (GB/s, us): 181.994 (10875)
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 3221094400
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/gdelt-locations/output_locations.txt
+	Compression:
+		Duration (us): 64696
+		Throughput (GB/s): 49.795
+		Compressed size: 1926790643
+	Decompression:
+		Duration (us): 7159397
+		Throughput (GB/s): 0.450
+		Ratio: 1.6717
+	Compression phases:
+		Table generation (GB/s, us): 450.755 (7146)
+		Precomputation (GB/s, us): 362.573 (8884)
+		Encoding (GB/s, us): 106.002 (30387)
+		Postprocessing (GB/s, us): 180.991 (17797)
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_urls
+	Compression:
+		Duration (us): 44042
+		Throughput (GB/s): 48.754
+		Compressed size: 1113950722
+	Decompression:
+		Duration (us): 3438159
+		Throughput (GB/s): 0.624
+		Ratio: 1.9273
+	Compression phases:
+		Table generation (GB/s, us): 358.065 (5996)
+		Precomputation (GB/s, us): 457.774 (4690)
+		Encoding (GB/s, us): 102.544 (20937)
+		Postprocessing (GB/s, us): 180.069 (11923)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_uuid
+	Compression:
+		Duration (us): 43276
+		Throughput (GB/s): 49.621
+		Compressed size: 1031595997
+	Decompression:
+		Duration (us): 3783371
+		Throughput (GB/s): 0.567
+		Ratio: 2.0812
+	Compression phases:
+		Table generation (GB/s, us): 250.520 (8570)
+		Precomputation (GB/s, us): 1010.334 (2125)
+		Encoding (GB/s, us): 106.549 (20150)
+		Postprocessing (GB/s, us): 180.114 (11920)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_yago
+	Compression:
+		Duration (us): 42971
+		Throughput (GB/s): 49.975
+		Compressed size: 1402247366
+	Decompression:
+		Duration (us): 5321624
+		Throughput (GB/s): 0.403
+		Ratio: 1.5311
+	Compression phases:
+		Table generation (GB/s, us): 210.013 (10223)
+		Precomputation (GB/s, us): 3413.290 (629)
+		Encoding (GB/s, us): 110.264 (19471)
+		Postprocessing (GB/s, us): 176.937 (12134)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_email
+	Compression:
+		Duration (us): 43626
+		Throughput (GB/s): 49.222
+		Compressed size: 1085748682
+	Decompression:
+		Duration (us): 4763241
+		Throughput (GB/s): 0.451
+		Ratio: 1.9774
+	Compression phases:
+		Table generation (GB/s, us): 238.896 (8987)
+		Precomputation (GB/s, us): 1248.958 (1719)
+		Encoding (GB/s, us): 105.047 (20438)
+		Postprocessing (GB/s, us): 179.587 (11955)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_urls2
+	Compression:
+		Duration (us): 43814
+		Throughput (GB/s): 49.010
+		Compressed size: 1196180672
+	Decompression:
+		Duration (us): 4524253
+		Throughput (GB/s): 0.475
+		Ratio: 1.7948
+	Compression phases:
+		Table generation (GB/s, us): 279.516 (7681)
+		Precomputation (GB/s, us): 711.149 (3019)
+		Encoding (GB/s, us): 103.904 (20663)
+		Postprocessing (GB/s, us): 179.482 (11962)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_wiki
+	Compression:
+		Duration (us): 43127
+		Throughput (GB/s): 49.793
+		Compressed size: 1396270026
+	Decompression:
+		Duration (us): 5338199
+		Throughput (GB/s): 0.402
+		Ratio: 1.5376
+	Compression phases:
+		Table generation (GB/s, us): 215.364 (9969)
+		Precomputation (GB/s, us): 2799.165 (767)
+		Encoding (GB/s, us): 108.575 (19774)
+		Postprocessing (GB/s, us): 177.420 (12101)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 31457280
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_hex
+	Compression:
+		Duration (us): 41743
+		Throughput (GB/s): 51.474
+		Compressed size: 1435932085
+	Decompression:
+		Duration (us): 5084499
+		Throughput (GB/s): 0.422
+		Ratio: 1.4952
+	Compression phases:
+		Table generation (GB/s, us): 184.732 (11622)
+		Precomputation (GB/s, us): 42939.187 (50)
+		Encoding (GB/s, us): 123.417 (17396)
+		Postprocessing (GB/s, us): 176.879 (12138)

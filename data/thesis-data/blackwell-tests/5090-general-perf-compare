@@ -1,0 +1,39 @@
+(main) root@C.20940805:/workspace/samples2/cuda-samples/build/Samples/6_Performance/transpose$ ./transpose
+Transpose Starting...
+
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+> Device 0: "NVIDIA GeForce RTX 5090"
+> SM Capability 12.0 detected:
+> [NVIDIA GeForce RTX 5090] has 170 MP(s) x 128 (Cores/MP) = 21760 (Cores)
+> Compute performance scaling factor = 1.00
+
+Matrix size: 1024x1024 (32x32 tiles), tile size: 32x32, block size: 32x16
+
+transpose simple copy       , Throughput = 1897.8593 GB/s, Time = 0.00412 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+transpose shared memory copy, Throughput = 1812.3422 GB/s, Time = 0.00431 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+transpose naive             , Throughput =  633.6707 GB/s, Time = 0.01233 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+transpose coalesced         , Throughput = 1261.0569 GB/s, Time = 0.00620 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+transpose optimized         , Throughput = 1807.9135 GB/s, Time = 0.00432 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+transpose coarse-grained    , Throughput = 1795.1516 GB/s, Time = 0.00435 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+transpose fine-grained      , Throughput = 1848.5699 GB/s, Time = 0.00423 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+transpose diagonal          , Throughput = 1835.6439 GB/s, Time = 0.00426 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 512
+Test passed
+
+
+(main) root@C.20940805:/workspace/samples2/cuda-samples/build/Samples/6_Performance/UnifiedMemoryPerf$ ./UnifiedMemoryPerf
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+Running ........................................................
+
+Overall Time For matrixMultiplyPerf
+
+Printing Average of 20 measurements in (ms)
+Size_KB	 UMhint	UMhntAs	 UMeasy	  0Copy	MemCopy	CpAsync	CpHpglk	CpPglAs
+4	      0.133	  0.131	  0.309	  0.014	  0.031	  0.021	  0.038	  0.024
+16	      0.143	  0.172	  0.424	  0.026	  0.041	  0.030	  0.047	  0.033
+64	      0.198	  0.239	  0.826	  0.098	  0.070	  0.053	  0.054	  0.046
+256	      0.381	  0.394	  1.288	  0.400	  0.165	  0.159	  0.157	  0.138
+1024	  1.193	  1.114	  2.187	  3.252	  0.592	  0.570	  0.511	  0.496
+4096	  4.100	  3.712	  8.473	 25.175	  2.375	  2.340	  2.122	  2.105
+16384	 17.914	 16.060	 35.112	220.288	 12.404	 12.367	 10.515	 10.668

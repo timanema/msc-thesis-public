@@ -1,0 +1,129 @@
+TPCH   508 3580
+GDelt  833 3753
+DBText 880 5389
+
+
+./fsst ~/tudelft/thesis/thesis-testing/customer-3gb/customer-id-3gb-1.txt
+Compressed 2850000000 bytes into 823237699 bytes ==> 28.886% (3.462) (5.825GB/s 1.222GB/s)
+Compressed 2850000000 bytes into 823237699 bytes ==> 28.886% (3.462) (8.071GB/s 1.369GB/s)
+Compressed 2850000000 bytes into 823237699 bytes ==> 28.886% (3.462) (8.224GB/s 1.370GB/s)
+Compressed 2850000000 bytes into 823237699 bytes ==> 28.886% (3.462) (8.079GB/s 1.354GB/s)
+Compressed 2850000000 bytes into 823237699 bytes ==> 28.886% (3.462) (8.234GB/s 1.374GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 7.549 377553 554
+	Encoding (GB/s, us, us/block): 1.335 2134428 3138
+	Total (GB/s, us): 1.135 2134428
+	Ratio: 3.462
+	Block size: 4194304 (modifier = 1)
+./fsst ~/tudelft/thesis/thesis-testing/lineitem-3gb/lineitem-comments-3gb-1.txt
+Compressed 2969743564 bytes into 1082372118 bytes ==> 36.447% (2.744) (4.299GB/s 0.587GB/s)
+Compressed 2969743564 bytes into 1082372118 bytes ==> 36.447% (2.744) (4.730GB/s 0.593GB/s)
+Compressed 2969743564 bytes into 1082372118 bytes ==> 36.447% (2.744) (4.708GB/s 0.586GB/s)
+Compressed 2969743564 bytes into 1082372118 bytes ==> 36.447% (2.744) (4.746GB/s 0.594GB/s)
+Compressed 2969743564 bytes into 1082372118 bytes ==> 36.447% (2.744) (4.776GB/s 0.594GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.644 639411 901
+	Encoding (GB/s, us, us/block): 0.591 5026013 7088
+	Total (GB/s, us): 0.524 5026013
+	Ratio: 2.744
+	Block size: 4194304 (modifier = 1)
+
+
+./fsst ~/tudelft/thesis/thesis-testing/gdelt-locations-inflated-3gb/output_locations.txt
+Compressed 3221225472 bytes into 1449730744 bytes ==> 45.006% (2.222) (4.269GB/s 0.983GB/s)
+Compressed 3221225472 bytes into 1449730744 bytes ==> 45.006% (2.222) (4.153GB/s 0.962GB/s)
+Compressed 3221225472 bytes into 1449730744 bytes ==> 45.006% (2.222) (3.962GB/s 0.885GB/s)
+Compressed 3221225472 bytes into 1449730744 bytes ==> 45.006% (2.222) (3.406GB/s 0.726GB/s)
+Compressed 3221225472 bytes into 1449730744 bytes ==> 45.006% (2.222) (3.678GB/s 0.792GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 3.867 832964 1082
+	Encoding (GB/s, us, us/block): 0.858 3753334 4880
+	Total (GB/s, us): 0.702 3753334
+	Ratio: 2.222
+	Block size: 4194304 (modifier = 1)
+
+
+./fsst ~/tudelft/thesis/thesis-testing/dbtext-inflated-3gb/output_urls
+Compressed 3221225472 bytes into 1386711258 bytes ==> 43.049% (2.323) (4.269GB/s 0.706GB/s)
+Compressed 3221225472 bytes into 1386711258 bytes ==> 43.049% (2.323) (4.685GB/s 0.714GB/s)
+Compressed 3221225472 bytes into 1386711258 bytes ==> 43.049% (2.323) (4.707GB/s 0.715GB/s)
+Compressed 3221225472 bytes into 1386711258 bytes ==> 43.049% (2.323) (4.552GB/s 0.692GB/s)
+Compressed 3221225472 bytes into 1386711258 bytes ==> 43.049% (2.323) (4.586GB/s 0.700GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.554 707306 919
+	Encoding (GB/s, us, us/block): 0.705 4567505 5939
+	Total (GB/s, us): 0.611 4567505
+	Ratio: 2.323
+	Block size: 4194304 (modifier = 1)
+./fsst ~/tudelft/thesis/thesis-testing/dbtext-inflated-3gb/output_uuid
+Compressed 3221225472 bytes into 1379218144 bytes ==> 42.817% (2.336) (3.712GB/s 0.743GB/s)
+Compressed 3221225472 bytes into 1379218144 bytes ==> 42.817% (2.336) (4.062GB/s 0.745GB/s)
+Compressed 3221225472 bytes into 1379218144 bytes ==> 42.817% (2.336) (4.171GB/s 0.751GB/s)
+Compressed 3221225472 bytes into 1379218144 bytes ==> 42.817% (2.336) (4.166GB/s 0.753GB/s)
+Compressed 3221225472 bytes into 1379218144 bytes ==> 42.817% (2.336) (4.189GB/s 0.754GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.052 795021 1033
+	Encoding (GB/s, us, us/block): 0.749 4299942 5591
+	Total (GB/s, us): 0.632 4299942
+	Ratio: 2.336
+	Block size: 4194304 (modifier = 1)
+./fsst ~/tudelft/thesis/thesis-testing/dbtext-inflated-3gb/output_yago
+Compressed 3221225472 bytes into 2066013569 bytes ==> 64.138% (1.559) (3.115GB/s 0.474GB/s)
+Compressed 3221225472 bytes into 2066013569 bytes ==> 64.138% (1.559) (3.160GB/s 0.478GB/s)
+Compressed 3221225472 bytes into 2066013569 bytes ==> 64.138% (1.559) (3.074GB/s 0.475GB/s)
+Compressed 3221225472 bytes into 2066013569 bytes ==> 64.138% (1.559) (3.179GB/s 0.484GB/s)
+Compressed 3221225472 bytes into 2066013569 bytes ==> 64.138% (1.559) (3.157GB/s 0.483GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 3.136 1027059 1334
+	Encoding (GB/s, us, us/block): 0.479 6726898 8747
+	Total (GB/s, us): 0.415 6726898
+	Ratio: 1.559
+	Block size: 4194304 (modifier = 1)
+./fsst ~/tudelft/thesis/thesis-testing/dbtext-inflated-3gb/output_email
+Compressed 3221225472 bytes into 1586379473 bytes ==> 49.248% (2.031) (3.559GB/s 0.524GB/s)
+Compressed 3221225472 bytes into 1586379473 bytes ==> 49.248% (2.031) (3.845GB/s 0.532GB/s)
+Compressed 3221225472 bytes into 1586379473 bytes ==> 49.248% (2.031) (3.939GB/s 0.539GB/s)
+Compressed 3221225472 bytes into 1586379473 bytes ==> 49.248% (2.031) (3.938GB/s 0.541GB/s)
+Compressed 3221225472 bytes into 1586379473 bytes ==> 49.248% (2.031) (3.806GB/s 0.539GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 3.812 844977 1098
+	Encoding (GB/s, us, us/block): 0.535 6022159 7830
+	Total (GB/s, us): 0.469 6022159
+	Ratio: 2.031
+	Block size: 4194304 (modifier = 1)
+./fsst ~/tudelft/thesis/thesis-testing/dbtext-inflated-3gb/output_urls2
+Compressed 3221225472 bytes into 1610936490 bytes ==> 50.010% (2.000) (3.926GB/s 0.546GB/s)
+Compressed 3221225472 bytes into 1610936490 bytes ==> 50.010% (2.000) (3.895GB/s 0.539GB/s)
+Compressed 3221225472 bytes into 1610936490 bytes ==> 50.010% (2.000) (4.097GB/s 0.555GB/s)
+Compressed 3221225472 bytes into 1610936490 bytes ==> 50.010% (2.000) (4.037GB/s 0.551GB/s)
+Compressed 3221225472 bytes into 1610936490 bytes ==> 50.010% (2.000) (4.111GB/s 0.555GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.011 803083 1043
+	Encoding (GB/s, us, us/block): 0.549 5868123 7630
+	Total (GB/s, us): 0.483 5868123
+	Ratio: 2.000
+	Block size: 4194304 (modifier = 1)
+./fsst ~/tudelft/thesis/thesis-testing/dbtext-inflated-3gb/output_wiki
+Compressed 3221225472 bytes into 2044151253 bytes ==> 63.459% (1.576) (3.199GB/s 0.462GB/s)
+Compressed 3221225472 bytes into 2044151253 bytes ==> 63.459% (1.576) (3.261GB/s 0.464GB/s)
+Compressed 3221225472 bytes into 2044151253 bytes ==> 63.459% (1.576) (3.311GB/s 0.469GB/s)
+Compressed 3221225472 bytes into 2044151253 bytes ==> 63.459% (1.576) (3.340GB/s 0.470GB/s)
+Compressed 3221225472 bytes into 2044151253 bytes ==> 63.459% (1.576) (3.315GB/s 0.467GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 3.284 980754 1275
+	Encoding (GB/s, us, us/block): 0.467 6904484 8978
+	Total (GB/s, us): 0.409 6904484
+	Ratio: 1.576
+	Block size: 4194304 (modifier = 1)
+./fsst ~/tudelft/thesis/thesis-testing/dbtext-inflated-3gb/output_hex
+Compressed 3221225472 bytes into 1744379832 bytes ==> 54.153% (1.847) (2.606GB/s 0.828GB/s)
+Compressed 3221225472 bytes into 1744379832 bytes ==> 54.153% (1.847) (3.378GB/s 0.997GB/s)
+Compressed 3221225472 bytes into 1744379832 bytes ==> 54.153% (1.847) (3.353GB/s 0.987GB/s)
+Compressed 3221225472 bytes into 1744379832 bytes ==> 54.153% (1.847) (3.512GB/s 1.040GB/s)
+Compressed 3221225472 bytes into 1744379832 bytes ==> 54.153% (1.847) (3.439GB/s 1.013GB/s)
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 3.218 1000850 1301
+	Encoding (GB/s, us, us/block): 0.967 3332667 4333
+	Total (GB/s, us): 0.743 3332667
+	Ratio: 1.847
+	Block size: 4194304 (modifier = 1)

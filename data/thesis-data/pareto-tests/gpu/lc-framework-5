@@ -1,0 +1,60 @@
+TPC-H:
+    1.119, 1.205 => 1.162
+    207.238, 162.526 => 184.882
+GDelt:
+    1.114
+    10.227
+DBText:
+	1.119,1.205,1.114,1.172,1.210,1.108,1.146,1.129,1.107,1.109 => 1.1419
+	121.242,108.772,55.450,67.665,50.900,68.663,36.412 => 72.7291
+
+
+
+Best Algorithm Found: BIT_8 TCMS_4 RAZE_8 TCMS_1 RAZE_2
+Compression Ratio: 1.205
+./generate_standalone_GPU_compressor_decompressor.py "" "BIT_8 TCMS_4 RAZE_8 TCMS_1 RAZE_2"
+nvcc -O3 -arch=sm_80 -fmad=false -Xcompiler "-O3 -march=native -fopenmp -mno-fma -ffp-contract=off" -I. -std=c++17 -o compress compressor-standalone.cu
+
+
+./compress ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt /tmp/lc-out y
+ratio:  89.37%   1.119x
+encoding time: 0.000495 s
+encoding throughput:  207.238 Gbytes/s
+./compress ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt /tmp/lc-out y
+ratio:  82.99%   1.205x
+encoding time: 0.006092 s
+encoding throughput:  162.526 Gbytes/s
+
+./compress ~/thesis-testing/gdelt-locations/locations.txt /tmp/lc-out y
+ratio:  89.76%   1.114x
+encoding time: 0.000165 s
+encoding throughput:   10.227 Gbytes/s
+
+./compress ~/thesis-testing/dbtext/urls /tmp/lc-out y
+ratio:  85.32%   1.172x
+encoding time: 0.000052 s
+encoding throughput:  121.242 Gbytes/s
+./compress ~/thesis-testing/dbtext/uuid /tmp/lc-out y
+ratio:  82.66%   1.210x
+encoding time: 0.000034 s
+encoding throughput:  108.772 Gbytes/s
+./compress ~/thesis-testing/dbtext/yago /tmp/lc-out y
+ratio:  90.25%   1.108x
+encoding time: 0.000035 s
+encoding throughput:   55.450 Gbytes/s
+./compress ~/thesis-testing/dbtext/email /tmp/lc-out y
+ratio:  87.25%   1.146x
+encoding time: 0.000033 s
+encoding throughput:   67.665 Gbytes/s
+./compress ~/thesis-testing/dbtext/urls2 /tmp/lc-out y
+ratio:  88.59%   1.129x
+encoding time: 0.000033 s
+encoding throughput:   50.900 Gbytes/s
+./compress ~/thesis-testing/dbtext/wiki /tmp/lc-out y
+ratio:  90.32%   1.107x
+encoding time: 0.000034 s
+encoding throughput:   68.663 Gbytes/s
+./compress ~/thesis-testing/dbtext/hex /tmp/lc-out y
+ratio:  90.17%   1.109x
+encoding time: 0.000033 s
+encoding throughput:   36.412 Gbytes/s

@@ -1,0 +1,60 @@
+TPC-H:
+    1.243, 1.143 => 1.193
+    233.711, 233.231 => 233.471
+GDelt:
+    1.137
+    55.173
+DBText:
+	1.138,1.039,1.116,1.142,1.142,1.124,1.040 => 1.1058
+	126.114,110.014,62.727,79.734,56.275,76.245,38.552 => 78.523
+
+
+
+Best Algorithm Found: RARE_1
+Compression Ratio: 1.143
+./generate_standalone_GPU_compressor_decompressor.py "" "RARE_1"
+nvcc -O3 -arch=sm_80 -fmad=false -Xcompiler "-O3 -march=native -fopenmp -mno-fma -ffp-contract=off" -I. -std=c++17 -o compress compressor-standalone.cu
+
+
+./compress ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt /tmp/lc-out y
+ratio:  80.43%   1.243x
+encoding time: 0.008122 s
+encoding throughput:  233.711 Gbytes/s
+./compress ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt /tmp/lc-out y
+ratio:  87.47%   1.143x
+encoding time: 0.008488 s
+encoding throughput:  233.231 Gbytes/s
+
+./compress ~/thesis-testing/gdelt-locations/locations.txt /tmp/lc-out y
+ratio:  87.99%   1.137x
+encoding time: 0.000031 s
+encoding throughput:   55.173 Gbytes/s
+
+./compress ~/thesis-testing/dbtext/urls /tmp/lc-out y
+ratio:  87.85%   1.138x
+encoding time: 0.000050 s
+encoding throughput:  126.114 Gbytes/s
+./compress ~/thesis-testing/dbtext/uuid /tmp/lc-out y
+ratio:  96.25%   1.039x
+encoding time: 0.000034 s
+encoding throughput:  110.014 Gbytes/s
+./compress ~/thesis-testing/dbtext/yago /tmp/lc-out y
+ratio:  89.61%   1.116x
+encoding time: 0.000031 s
+encoding throughput:   62.727 Gbytes/s
+./compress ~/thesis-testing/dbtext/email /tmp/lc-out y
+ratio:  87.56%   1.142x
+encoding time: 0.000028 s
+encoding throughput:   79.734 Gbytes/s
+./compress ~/thesis-testing/dbtext/urls2 /tmp/lc-out y
+ratio:  87.56%   1.142x
+encoding time: 0.000030 s
+encoding throughput:   56.275 Gbytes/s
+./compress ~/thesis-testing/dbtext/wiki /tmp/lc-out y
+ratio:  88.94%   1.124x
+encoding time: 0.000031 s
+encoding throughput:   76.245 Gbytes/s
+./compress ~/thesis-testing/dbtext/hex /tmp/lc-out y
+ratio:  96.18%   1.040x
+encoding time: 0.000032 s
+encoding throughput:   38.552 Gbytes/s

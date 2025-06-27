@@ -1,0 +1,262 @@
+./lzbench -o4p3i3,1 ../thesis-testing/dbtext-inflated-2gb/output_urls
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,26703.85,26947.28,2147483648,2147483648,100.00,../thesis-testing/dbtext-inflated-2gb/output_urls
+fastlz 0.5.0 -1,537.78,1189.49,2147483648,828517222,38.58,../thesis-testing/dbtext-inflated-2gb/output_urls
+fastlz 0.5.0 -2,461.57,1182.07,2147483648,786489868,36.62,../thesis-testing/dbtext-inflated-2gb/output_urls
+kanzi 2.3 -1,197.63,1442.76,2147483648,539458294,25.12,../thesis-testing/dbtext-inflated-2gb/output_urls
+kanzi 2.3 -2,195.17,849.81,2147483648,454989647,21.19,../thesis-testing/dbtext-inflated-2gb/output_urls
+kanzi 2.3 -3,154.87,898.40,2147483648,427175012,19.89,../thesis-testing/dbtext-inflated-2gb/output_urls
+kanzi 2.3 -4,89.61,391.24,2147483648,347242150,16.17,../thesis-testing/dbtext-inflated-2gb/output_urls
+lizard 2.1 -10,783.06,2620.09,2147483648,762870461,35.52,../thesis-testing/dbtext-inflated-2gb/output_urls
+lizard 2.1 -11,590.68,2596.98,2147483648,695543918,32.39,../thesis-testing/dbtext-inflated-2gb/output_urls
+lizard 2.1 -12,289.88,3118.40,2147483648,599679563,27.92,../thesis-testing/dbtext-inflated-2gb/output_urls
+lizard 2.1 -13,179.71,3191.53,2147483648,575592181,26.80,../thesis-testing/dbtext-inflated-2gb/output_urls
+lizard 2.1 -14,154.98,3291.81,2147483648,558663854,26.01,../thesis-testing/dbtext-inflated-2gb/output_urls
+lz4 1.10.0,851.95,4273.25,2147483648,761868203,35.48,../thesis-testing/dbtext-inflated-2gb/output_urls
+lz4fast 1.10.0 -3,897.49,4181.56,2147483648,805655271,37.52,../thesis-testing/dbtext-inflated-2gb/output_urls
+lz4fast 1.10.0 -17,1074.08,4057.46,2147483648,932350760,43.42,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzav 4.5 -1,1174.94,7420.17,2147483648,227533824,10.60,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzav 4.5 -2,185.57,8928.09,2147483648,164991432,7.68,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzf 3.6 -0,444.87,825.83,2147483648,851767761,39.66,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzf 3.6 -1,520.05,852.66,2147483648,814541497,37.93,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzfse 2017-03-08,143.30,1219.92,2147483648,458752425,21.36,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzo1b 2.10 -1,357.11,932.87,2147483648,737757031,34.35,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzo1c 2.10 -1,428.32,1015.70,2147483648,786703918,36.63,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzof 2.10 -1,385.73,1031.98,2147483648,796384124,37.08,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzo1x 2.10 -1,894.48,1021.75,2147483648,794414757,36.99,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzo1y 2.10 -1,794.07,933.82,2147483648,792983998,36.93,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzsse4fast 2019-04-18,471.89,8700.28,2147483648,657800168,30.63,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzsse8fast 2019-04-18,462.65,8637.32,2147483648,659840440,30.73,../thesis-testing/dbtext-inflated-2gb/output_urls
+lzvn 2017-03-08,109.66,1230.97,2147483648,626433743,29.17,../thesis-testing/dbtext-inflated-2gb/output_urls
+quicklz 1.5.0 -1,665.92,861.00,2147483648,681817674,31.75,../thesis-testing/dbtext-inflated-2gb/output_urls
+quicklz 1.5.0 -2,364.89,1019.73,2147483648,566442102,26.38,../thesis-testing/dbtext-inflated-2gb/output_urls
+snappy 1.2.1,633.04,1959.83,2147483648,767714770,35.75,../thesis-testing/dbtext-inflated-2gb/output_urls
+tornado 0.6a -1,583.83,703.44,2147483648,803291579,37.41,../thesis-testing/dbtext-inflated-2gb/output_urls
+tornado 0.6a -2,445.21,693.27,2147483648,635970666,29.61,../thesis-testing/dbtext-inflated-2gb/output_urls
+tornado 0.6a -3,339.41,507.51,2147483648,507627854,23.64,../thesis-testing/dbtext-inflated-2gb/output_urls
+zstd 1.5.6 -1,666.46,2182.00,2147483648,513527250,23.91,../thesis-testing/dbtext-inflated-2gb/output_urls
+zstd 1.5.6 -2,540.43,2082.79,2147483648,472193730,21.99,../thesis-testing/dbtext-inflated-2gb/output_urls
+zstd 1.5.6 -3,437.05,2167.32,2147483648,440092123,20.49,../thesis-testing/dbtext-inflated-2gb/output_urls
+zstd 1.5.6 -4,386.02,2135.10,2147483648,432674390,20.15,../thesis-testing/dbtext-inflated-2gb/output_urls
+zstd 1.5.6 -5,226.75,2190.60,2147483648,386779834,18.01,../thesis-testing/dbtext-inflated-2gb/output_urls
+
+./lzbench -o4p3i3,1 ../thesis-testing/dbtext-inflated-2gb/output_uuid
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,25271.27,25519.13,2147483648,2147483648,100.00,../thesis-testing/dbtext-inflated-2gb/output_uuid
+fastlz 0.5.0 -1,456.84,809.40,2147483648,1302278441,60.64,../thesis-testing/dbtext-inflated-2gb/output_uuid
+fastlz 0.5.0 -2,361.04,734.37,2147483648,1306227041,60.83,../thesis-testing/dbtext-inflated-2gb/output_uuid
+kanzi 2.3 -1,252.75,2590.80,2147483648,906904998,42.23,../thesis-testing/dbtext-inflated-2gb/output_uuid
+kanzi 2.3 -2,225.84,759.33,2147483648,814293382,37.92,../thesis-testing/dbtext-inflated-2gb/output_uuid
+terminate called after throwing an instance of 'kanzi::IOException'
+  what():  Could not generate Huffman codes: max code length (12 bits) exceeded. Error code: 13
+Aborted (core dumped)
+
+./lzbench -o4p3i3,1 ../thesis-testing/dbtext-inflated-2gb/output_yago
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,26182.74,26272.39,2147483648,2147483648,100.00,../thesis-testing/dbtext-inflated-2gb/output_yago
+fastlz 0.5.0 -1,282.82,564.18,2147483648,1656056308,77.12,../thesis-testing/dbtext-inflated-2gb/output_yago
+fastlz 0.5.0 -2,274.99,568.61,2147483648,1639856265,76.36,../thesis-testing/dbtext-inflated-2gb/output_yago
+kanzi 2.3 -1,229.83,1818.84,2147483648,580547023,27.03,../thesis-testing/dbtext-inflated-2gb/output_yago
+kanzi 2.3 -2,211.87,899.71,2147483648,520261387,24.23,../thesis-testing/dbtext-inflated-2gb/output_yago
+kanzi 2.3 -3,150.38,864.16,2147483648,503879294,23.46,../thesis-testing/dbtext-inflated-2gb/output_yago
+kanzi 2.3 -4,93.31,410.07,2147483648,429959319,20.02,../thesis-testing/dbtext-inflated-2gb/output_yago
+lizard 2.1 -10,599.92,2950.53,2147483648,1860865628,86.65,../thesis-testing/dbtext-inflated-2gb/output_yago
+lizard 2.1 -11,207.74,2432.43,2147483648,1480401511,68.94,../thesis-testing/dbtext-inflated-2gb/output_yago
+lizard 2.1 -12,156.01,2542.75,2147483648,1408739327,65.60,../thesis-testing/dbtext-inflated-2gb/output_yago
+lizard 2.1 -13,99.14,2585.87,2147483648,1377613151,64.15,../thesis-testing/dbtext-inflated-2gb/output_yago
+lizard 2.1 -14,92.78,2457.64,2147483648,1365140292,63.57,../thesis-testing/dbtext-inflated-2gb/output_yago
+lz4 1.10.0,788.19,4263.66,2147483648,1860132873,86.62,../thesis-testing/dbtext-inflated-2gb/output_yago
+lz4fast 1.10.0 -3,1254.05,4838.34,2147483648,1944741943,90.56,../thesis-testing/dbtext-inflated-2gb/output_yago
+lz4fast 1.10.0 -17,2706.24,15164.02,2147483648,2106415513,98.09,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzav 4.5 -1,2291.44,13866.44,2147483648,145042455,6.75,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzav 4.5 -2,411.26,20347.63,2147483648,75135502,3.50,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzf 3.6 -0,252.81,520.50,2147483648,1727182243,80.43,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzf 3.6 -1,281.92,536.49,2147483648,1583458274,73.74,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzfse 2017-03-08,73.08,617.76,2147483648,1081129644,50.34,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzo1b 2.10 -1,151.54,434.17,2147483648,1668917554,77.72,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzo1c 2.10 -1,135.33,493.57,2147483648,1696335435,78.99,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzof 2.10 -1,131.21,508.66,2147483648,1730485778,80.58,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzo1x 2.10 -1,550.59,668.91,2147483648,1802342749,83.93,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzo1y 2.10 -1,569.86,693.87,2147483648,1819807907,84.74,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzsse4fast 2019-04-18,205.75,4868.69,2147483648,1339111205,62.36,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzsse8fast 2019-04-18,207.20,5509.16,2147483648,1332292093,62.04,../thesis-testing/dbtext-inflated-2gb/output_yago
+lzvn 2017-03-08,55.30,728.48,2147483648,1397869105,65.09,../thesis-testing/dbtext-inflated-2gb/output_yago
+quicklz 1.5.0 -1,347.33,469.55,2147483648,1581393112,73.64,../thesis-testing/dbtext-inflated-2gb/output_yago
+quicklz 1.5.0 -2,175.07,491.07,2147483648,1388513562,64.66,../thesis-testing/dbtext-inflated-2gb/output_yago
+snappy 1.2.1,399.80,1248.91,2147483648,1796174633,83.64,../thesis-testing/dbtext-inflated-2gb/output_yago
+tornado 0.6a -1,387.78,496.52,2147483648,2014131940,93.79,../thesis-testing/dbtext-inflated-2gb/output_yago
+tornado 0.6a -2,287.34,454.92,2147483648,1533758691,71.42,../thesis-testing/dbtext-inflated-2gb/output_yago
+tornado 0.6a -3,219.34,294.68,2147483648,1057620714,49.25,../thesis-testing/dbtext-inflated-2gb/output_yago
+zstd 1.5.6 -1,559.61,1973.68,2147483648,1218732575,56.75,../thesis-testing/dbtext-inflated-2gb/output_yago
+zstd 1.5.6 -2,450.18,2033.98,2147483648,1100716929,51.26,../thesis-testing/dbtext-inflated-2gb/output_yago
+zstd 1.5.6 -3,13566.75,24707.53,2147483648,2101469,0.10,../thesis-testing/dbtext-inflated-2gb/output_yago
+zstd 1.5.6 -4,16045.36,24662.62,2147483648,2025222,0.09,../thesis-testing/dbtext-inflated-2gb/output_yago
+zstd 1.5.6 -5,12571.87,24645.37,2147483648,1978861,0.09,../thesis-testing/dbtext-inflated-2gb/output_yago
+
+./lzbench -o4p3i3,1 ../thesis-testing/dbtext-inflated-2gb/output_email
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,15804.19,23640.34,2147483648,2147483648,100.00,../thesis-testing/dbtext-inflated-2gb/output_email
+fastlz 0.5.0 -1,316.02,657.04,2147483648,1382583417,64.38,../thesis-testing/dbtext-inflated-2gb/output_email
+fastlz 0.5.0 -2,286.64,661.46,2147483648,1378899255,64.21,../thesis-testing/dbtext-inflated-2gb/output_email
+kanzi 2.3 -1,260.53,2063.51,2147483648,535918120,24.96,../thesis-testing/dbtext-inflated-2gb/output_email
+kanzi 2.3 -2,222.29,910.02,2147483648,494659484,23.03,../thesis-testing/dbtext-inflated-2gb/output_email
+kanzi 2.3 -3,159.20,921.83,2147483648,489080782,22.77,../thesis-testing/dbtext-inflated-2gb/output_email
+kanzi 2.3 -4,91.46,392.89,2147483648,427642839,19.91,../thesis-testing/dbtext-inflated-2gb/output_email
+lizard 2.1 -10,642.72,3797.48,2147483648,1438541239,66.99,../thesis-testing/dbtext-inflated-2gb/output_email
+lizard 2.1 -11,273.11,3425.00,2147483648,1242029113,57.84,../thesis-testing/dbtext-inflated-2gb/output_email
+lizard 2.1 -12,186.64,3500.21,2147483648,1193578115,55.58,../thesis-testing/dbtext-inflated-2gb/output_email
+lizard 2.1 -13,119.59,3334.08,2147483648,1167600975,54.37,../thesis-testing/dbtext-inflated-2gb/output_email
+lizard 2.1 -14,109.26,3857.65,2147483648,1154654750,53.77,../thesis-testing/dbtext-inflated-2gb/output_email
+lz4 1.10.0,816.50,6930.05,2147483648,1437027653,66.92,../thesis-testing/dbtext-inflated-2gb/output_email
+lz4fast 1.10.0 -3,864.62,6931.98,2147483648,1526236748,71.07,../thesis-testing/dbtext-inflated-2gb/output_email
+lz4fast 1.10.0 -17,1397.82,6277.76,2147483648,1911631795,89.02,../thesis-testing/dbtext-inflated-2gb/output_email
+lzav 4.5 -1,2371.88,14164.67,2147483648,147127037,6.85,../thesis-testing/dbtext-inflated-2gb/output_email
+lzav 4.5 -2,359.08,17619.20,2147483648,93899098,4.37,../thesis-testing/dbtext-inflated-2gb/output_email
+lzf 3.6 -0,277.42,509.00,2147483648,1429279929,66.56,../thesis-testing/dbtext-inflated-2gb/output_email
+lzf 3.6 -1,296.87,509.99,2147483648,1340019206,62.40,../thesis-testing/dbtext-inflated-2gb/output_email
+lzfse 2017-03-08,86.31,664.99,2147483648,906966695,42.23,../thesis-testing/dbtext-inflated-2gb/output_email
+lzo1b 2.10 -1,177.28,512.03,2147483648,1366631616,63.64,../thesis-testing/dbtext-inflated-2gb/output_email
+lzo1c 2.10 -1,175.63,572.96,2147483648,1380614506,64.29,../thesis-testing/dbtext-inflated-2gb/output_email
+lzof 2.10 -1,168.41,612.46,2147483648,1403223158,65.34,../thesis-testing/dbtext-inflated-2gb/output_email
+lzo1x 2.10 -1,528.24,613.41,2147483648,1404173243,65.39,../thesis-testing/dbtext-inflated-2gb/output_email
+lzo1y 2.10 -1,537.58,610.07,2147483648,1397325110,65.07,../thesis-testing/dbtext-inflated-2gb/output_email
+lzsse4fast 2019-04-18,260.60,5712.52,2147483648,1157720682,53.91,../thesis-testing/dbtext-inflated-2gb/output_email
+lzsse8fast 2019-04-18,238.69,5420.52,2147483648,1165344608,54.27,../thesis-testing/dbtext-inflated-2gb/output_email
+lzvn 2017-03-08,71.15,758.44,2147483648,1199241770,55.84,../thesis-testing/dbtext-inflated-2gb/output_email
+quicklz 1.5.0 -1,389.94,506.31,2147483648,1241865704,57.83,../thesis-testing/dbtext-inflated-2gb/output_email
+quicklz 1.5.0 -2,205.17,564.08,2147483648,1158505191,53.95,../thesis-testing/dbtext-inflated-2gb/output_email
+snappy 1.2.1,395.57,1348.52,2147483648,1403433640,65.35,../thesis-testing/dbtext-inflated-2gb/output_email
+tornado 0.6a -1,418.82,506.57,2147483648,1551880376,72.27,../thesis-testing/dbtext-inflated-2gb/output_email
+tornado 0.6a -2,288.19,461.08,2147483648,1259924175,58.67,../thesis-testing/dbtext-inflated-2gb/output_email
+tornado 0.6a -3,206.12,322.03,2147483648,953555713,44.40,../thesis-testing/dbtext-inflated-2gb/output_email
+zstd 1.5.6 -1,613.77,2515.41,2147483648,926186121,43.13,../thesis-testing/dbtext-inflated-2gb/output_email
+zstd 1.5.6 -2,498.09,2765.87,2147483648,895842858,41.72,../thesis-testing/dbtext-inflated-2gb/output_email
+zstd 1.5.6 -3,320.96,2133.63,2147483648,886465876,41.28,../thesis-testing/dbtext-inflated-2gb/output_email
+zstd 1.5.6 -4,239.66,1903.48,2147483648,881791152,41.06,../thesis-testing/dbtext-inflated-2gb/output_email
+zstd 1.5.6 -5,153.45,1817.45,2147483648,861687797,40.13,../thesis-testing/dbtext-inflated-2gb/output_email
+
+./lzbench -o4p3i3,1 ../thesis-testing/dbtext-inflated-2gb/output_urls2
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,24145.72,24199.92,2147483648,2147483648,100.00,../thesis-testing/dbtext-inflated-2gb/output_urls2
+fastlz 0.5.0 -1,300.39,705.89,2147483648,1230850512,57.32,../thesis-testing/dbtext-inflated-2gb/output_urls2
+fastlz 0.5.0 -2,273.35,700.03,2147483648,1221306732,56.87,../thesis-testing/dbtext-inflated-2gb/output_urls2
+kanzi 2.3 -1,251.42,2200.20,2147483648,354677765,16.52,../thesis-testing/dbtext-inflated-2gb/output_urls2
+kanzi 2.3 -2,230.33,1156.10,2147483648,325579091,15.16,../thesis-testing/dbtext-inflated-2gb/output_urls2
+kanzi 2.3 -3,164.44,488.52,2147483648,349303079,16.27,../thesis-testing/dbtext-inflated-2gb/output_urls2
+kanzi 2.3 -4,104.84,321.27,2147483648,369779905,17.22,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lizard 2.1 -10,709.64,2695.92,2147483648,1288593425,60.00,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lizard 2.1 -11,325.62,2681.56,2147483648,1122661987,52.28,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lizard 2.1 -12,223.37,2749.42,2147483648,1054139342,49.09,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lizard 2.1 -13,142.82,2747.88,2147483648,1033554688,48.13,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lizard 2.1 -14,135.16,3602.47,2147483648,1021506424,47.57,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lz4 1.10.0,856.76,4328.97,2147483648,1287259897,59.94,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lz4fast 1.10.0 -3,965.73,4328.72,2147483648,1345718355,62.66,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lz4fast 1.10.0 -17,1313.33,5072.12,2147483648,1539160645,71.67,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzav 4.5 -1,2669.26,16003.74,2147483648,94559044,4.40,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzav 4.5 -2,392.31,21068.01,2147483648,70302048,3.27,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzf 3.6 -0,294.04,639.83,2147483648,1264130231,58.87,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzf 3.6 -1,328.00,612.52,2147483648,1204999586,56.11,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzfse 2017-03-08,102.52,802.80,2147483648,802346981,37.36,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzo1b 2.10 -1,201.46,624.24,2147483648,1191930484,55.50,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzo1c 2.10 -1,206.02,694.80,2147483648,1216408111,56.64,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzof 2.10 -1,198.49,761.24,2147483648,1232332256,57.38,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzo1x 2.10 -1,636.47,759.74,2147483648,1226620291,57.12,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzo1y 2.10 -1,626.59,754.19,2147483648,1227460408,57.16,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzsse4fast 2019-04-18,312.78,6397.42,2147483648,1038407893,48.35,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzsse8fast 2019-04-18,295.66,7579.98,2147483648,1029516664,47.94,../thesis-testing/dbtext-inflated-2gb/output_urls2
+lzvn 2017-03-08,79.89,903.06,2147483648,1038823030,48.37,../thesis-testing/dbtext-inflated-2gb/output_urls2
+quicklz 1.5.0 -1,454.40,574.88,2147483648,1129098725,52.58,../thesis-testing/dbtext-inflated-2gb/output_urls2
+quicklz 1.5.0 -2,243.87,596.13,2147483648,1006904368,46.89,../thesis-testing/dbtext-inflated-2gb/output_urls2
+snappy 1.2.1,494.99,1515.53,2147483648,1218960341,56.76,../thesis-testing/dbtext-inflated-2gb/output_urls2
+tornado 0.6a -1,486.89,591.76,2147483648,1379084192,64.22,../thesis-testing/dbtext-inflated-2gb/output_urls2
+tornado 0.6a -2,345.98,547.58,2147483648,1082792287,50.42,../thesis-testing/dbtext-inflated-2gb/output_urls2
+tornado 0.6a -3,238.68,318.31,2147483648,857187439,39.92,../thesis-testing/dbtext-inflated-2gb/output_urls2
+zstd 1.5.6 -1,596.18,1949.27,2147483648,872158081,40.61,../thesis-testing/dbtext-inflated-2gb/output_urls2
+zstd 1.5.6 -2,473.88,1949.98,2147483648,811937428,37.81,../thesis-testing/dbtext-inflated-2gb/output_urls2
+zstd 1.5.6 -3,14072.46,23480.16,2147483648,1421856,0.07,../thesis-testing/dbtext-inflated-2gb/output_urls2
+zstd 1.5.6 -4,13703.38,23314.80,2147483648,1396661,0.07,../thesis-testing/dbtext-inflated-2gb/output_urls2
+zstd 1.5.6 -5,13266.54,23316.89,2147483648,1351078,0.06,../thesis-testing/dbtext-inflated-2gb/output_urls2
+
+./lzbench -o4p3i3,1 ../thesis-testing/dbtext-inflated-2gb/output_wiki
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,12092.87,16151.73,2147483648,2147483648,100.00,../thesis-testing/dbtext-inflated-2gb/output_wiki
+fastlz 0.5.0 -1,267.37,533.39,2147483648,1607197686,74.84,../thesis-testing/dbtext-inflated-2gb/output_wiki
+fastlz 0.5.0 -2,247.13,531.33,2147483648,1586302137,73.87,../thesis-testing/dbtext-inflated-2gb/output_wiki
+kanzi 2.3 -1,187.81,1590.52,2147483648,682431343,31.78,../thesis-testing/dbtext-inflated-2gb/output_wiki
+kanzi 2.3 -2,173.06,703.33,2147483648,595324959,27.72,../thesis-testing/dbtext-inflated-2gb/output_wiki
+kanzi 2.3 -3,120.77,794.73,2147483648,566265528,26.37,../thesis-testing/dbtext-inflated-2gb/output_wiki
+kanzi 2.3 -4,81.66,358.94,2147483648,501520890,23.35,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lizard 2.1 -10,614.23,2867.32,2147483648,1768420172,82.35,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lizard 2.1 -11,220.24,2556.25,2147483648,1412388038,65.77,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lizard 2.1 -12,161.19,2413.73,2147483648,1340963817,62.44,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lizard 2.1 -13,104.06,2393.65,2147483648,1310509574,61.03,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lizard 2.1 -14,97.09,2601.00,2147483648,1298036883,60.44,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lz4 1.10.0,760.97,4199.14,2147483648,1767659629,82.31,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lz4fast 1.10.0 -3,1135.65,4390.33,2147483648,1851823138,86.23,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lz4fast 1.10.0 -17,2245.30,11678.18,2147483648,2039162813,94.96,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzav 4.5 -1,1971.77,10808.42,2147483648,169344086,7.89,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzav 4.5 -2,348.80,16667.40,2147483648,101888285,4.74,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzf 3.6 -0,241.83,492.24,2147483648,1678945635,78.18,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzf 3.6 -1,271.74,526.33,2147483648,1540616414,71.74,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzfse 2017-03-08,77.60,638.59,2147483648,1034593891,48.18,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzo1b 2.10 -1,154.40,442.46,2147483648,1585589415,73.83,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzo1c 2.10 -1,140.66,498.03,2147483648,1620446603,75.46,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzof 2.10 -1,153.77,592.80,2147483648,1651330656,76.90,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzo1x 2.10 -1,549.95,676.61,2147483648,1682357962,78.34,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzo1y 2.10 -1,567.66,705.64,2147483648,1700444462,79.18,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzsse4fast 2019-04-18,243.71,5973.90,2147483648,1286769720,59.92,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzsse8fast 2019-04-18,243.06,6486.86,2147483648,1278999379,59.56,../thesis-testing/dbtext-inflated-2gb/output_wiki
+lzvn 2017-03-08,74.00,958.18,2147483648,1334164833,62.13,../thesis-testing/dbtext-inflated-2gb/output_wiki
+quicklz 1.5.0 -1,455.36,611.27,2147483648,1527626984,71.14,../thesis-testing/dbtext-inflated-2gb/output_wiki
+quicklz 1.5.0 -2,234.58,635.95,2147483648,1332676650,62.06,../thesis-testing/dbtext-inflated-2gb/output_wiki
+snappy 1.2.1,484.17,1512.08,2147483648,1678448574,78.16,../thesis-testing/dbtext-inflated-2gb/output_wiki
+tornado 0.6a -1,499.78,634.68,2147483648,1915456496,89.20,../thesis-testing/dbtext-inflated-2gb/output_wiki
+tornado 0.6a -2,341.62,544.55,2147483648,1462773073,68.12,../thesis-testing/dbtext-inflated-2gb/output_wiki
+tornado 0.6a -3,233.97,319.61,2147483648,1121723776,52.23,../thesis-testing/dbtext-inflated-2gb/output_wiki
+zstd 1.5.6 -1,665.37,2273.22,2147483648,1171062687,54.53,../thesis-testing/dbtext-inflated-2gb/output_wiki
+zstd 1.5.6 -2,512.14,2289.51,2147483648,1055217899,49.14,../thesis-testing/dbtext-inflated-2gb/output_wiki
+zstd 1.5.6 -3,325.37,2192.41,2147483648,1003271822,46.72,../thesis-testing/dbtext-inflated-2gb/output_wiki
+zstd 1.5.6 -4,239.23,1895.27,2147483648,961252892,44.76,../thesis-testing/dbtext-inflated-2gb/output_wiki
+zstd 1.5.6 -5,166.80,1941.69,2147483648,932171478,43.41,../thesis-testing/dbtext-inflated-2gb/output_wiki
+
+./lzbench -o4p3i3,1 ../thesis-testing/dbtext-inflated-2gb/output_hex
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,13460.20,12507.63,2147483648,2147483648,100.00,../thesis-testing/dbtext-inflated-2gb/output_hex
+fastlz 0.5.0 -1,480.23,690.85,2147483648,1638539591,76.30,../thesis-testing/dbtext-inflated-2gb/output_hex
+fastlz 0.5.0 -2,421.00,696.77,2147483648,1607914404,74.87,../thesis-testing/dbtext-inflated-2gb/output_hex
+kanzi 2.3 -1,367.42,3468.29,2147483648,252772212,11.77,../thesis-testing/dbtext-inflated-2gb/output_hex
+kanzi 2.3 -2,345.54,1732.52,2147483648,248551809,11.57,../thesis-testing/dbtext-inflated-2gb/output_hex
+kanzi 2.3 -3,243.01,1737.28,2147483648,246808301,11.49,../thesis-testing/dbtext-inflated-2gb/output_hex
+kanzi 2.3 -4,180.39,1188.61,2147483648,252527489,11.76,../thesis-testing/dbtext-inflated-2gb/output_hex
+lizard 2.1 -10,2214.86,21346.66,2147483648,2064613032,96.14,../thesis-testing/dbtext-inflated-2gb/output_hex
+lizard 2.1 -11,188.98,3166.80,2147483648,1915958612,89.22,../thesis-testing/dbtext-inflated-2gb/output_hex
+lizard 2.1 -12,172.37,3049.68,2147483648,1888581554,87.94,../thesis-testing/dbtext-inflated-2gb/output_hex
+lizard 2.1 -13,113.37,3101.26,2147483648,1870478620,87.10,../thesis-testing/dbtext-inflated-2gb/output_hex
+lizard 2.1 -14,112.74,3005.45,2147483648,1868611072,87.01,../thesis-testing/dbtext-inflated-2gb/output_hex
+lz4 1.10.0,3440.00,21413.15,2147483648,2066844853,96.24,../thesis-testing/dbtext-inflated-2gb/output_hex
+lz4fast 1.10.0 -3,3452.10,21546.38,2147483648,2068075642,96.30,../thesis-testing/dbtext-inflated-2gb/output_hex
+lz4fast 1.10.0 -17,5488.65,21891.43,2147483648,2070677415,96.42,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzav 4.5 -1,7860.80,20571.50,2147483648,59273908,2.76,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzav 4.5 -2,1494.63,25711.63,2147483648,28038193,1.31,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzf 3.6 -0,338.77,555.58,2147483648,1908678812,88.88,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzf 3.6 -1,462.04,827.51,2147483648,1573891659,73.29,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzfse 2017-03-08,66.57,536.24,2147483648,1178379339,54.87,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzo1b 2.10 -1,146.19,517.56,2147483648,1880140914,87.55,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzo1c 2.10 -1,123.49,667.93,2147483648,1957192356,91.14,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzof 2.10 -1,125.33,728.27,2147483648,1993189306,92.82,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzo1x 2.10 -1,6075.01,10251.07,2147483648,2144490309,99.86,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzo1y 2.10 -1,6520.65,10876.50,2147483648,2145238801,99.90,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzsse4fast 2019-04-18,206.95,4758.00,2147483648,1499453941,69.82,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzsse8fast 2019-04-18,212.22,5351.85,2147483648,1494493536,69.59,../thesis-testing/dbtext-inflated-2gb/output_hex
+lzvn 2017-03-08,76.99,832.49,2147483648,1641312993,76.43,../thesis-testing/dbtext-inflated-2gb/output_hex
+quicklz 1.5.0 -1,522.82,592.07,2147483648,1776528780,82.73,../thesis-testing/dbtext-inflated-2gb/output_hex
+quicklz 1.5.0 -2,221.01,831.78,2147483648,1468525697,68.38,../thesis-testing/dbtext-inflated-2gb/output_hex
+snappy 1.2.1,5179.51,12085.50,2147483648,2131912894,99.27,../thesis-testing/dbtext-inflated-2gb/output_hex
+tornado 0.6a -1,628.82,839.36,2147483648,2342739680,109.09,../thesis-testing/dbtext-inflated-2gb/output_hex
+tornado 0.6a -2,628.36,992.54,2147483648,1078279456,50.21,../thesis-testing/dbtext-inflated-2gb/output_hex
+tornado 0.6a -3,564.29,769.83,2147483648,450280214,20.97,../thesis-testing/dbtext-inflated-2gb/output_hex
+zstd 1.5.6 -1,2545.74,5350.11,2147483648,852923408,39.72,../thesis-testing/dbtext-inflated-2gb/output_hex
+zstd 1.5.6 -2,1607.46,5501.22,2147483648,728146895,33.91,../thesis-testing/dbtext-inflated-2gb/output_hex
+zstd 1.5.6 -3,17789.87,25582.52,2147483648,1141770,0.05,../thesis-testing/dbtext-inflated-2gb/output_hex
+zstd 1.5.6 -4,17289.42,25540.32,2147483648,1156829,0.05,../thesis-testing/dbtext-inflated-2gb/output_hex
+zstd 1.5.6 -5,17011.36,25523.56,2147483648,1153345,0.05,../thesis-testing/dbtext-inflated-2gb/output_hex

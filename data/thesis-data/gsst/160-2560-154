@@ -1,0 +1,227 @@
+Strict output checking is disabled, decompressed data might not match original data!
+encoding: 67.667
+encoding: 103.949
+encoding: 109.003
+encoding: 112.184
+encoding: 112.503
+encoding: 112.746
+encoding: 112.701
+encoding: 112.567
+encoding: 112.298
+encoding: 112.165
+encoding: 112.381
+encoding: 112.515
+encoding: 112.165
+encoding: 112.038
+encoding: 111.489
+encoding: 112.114
+encoding: 110.889
+encoding: 111.671
+encoding: 111.245
+encoding: 111.722
+encoding: 112.381
+encoding: 99.342
+encoding: 96.613
+encoding: 108.865
+encoding: 111.426
+encoding: 111.351
+encoding: 111.545
+encoding: 111.753
+encoding: 111.772
+encoding: 111.640
+encoding: 111.753
+encoding: 111.936
+encoding: 112.127
+encoding: 111.320
+encoding: 111.810
+encoding: 111.715
+encoding: 110.989
+encoding: 111.577
+encoding: 112.101
+encoding: 111.401
+encoding: 111.420
+encoding: 112.089
+encoding: 112.292
+encoding: 111.357
+encoding: 111.918
+encoding: 111.621
+encoding: 110.896
+encoding: 111.678
+encoding: 111.552
+encoding: 111.627
+encoding: 112.019
+encoding: 96.835
+encoding: 95.771
+encoding: 99.198
+encoding: 99.109
+encoding: 96.570
+encoding: 97.106
+encoding: 109.249
+encoding: 111.426
+encoding: 112.184
+encoding: 112.228
+encoding: 112.190
+encoding: 112.133
+encoding: 112.330
+encoding: 111.924
+encoding: 112.146
+encoding: 111.791
+encoding: 111.842
+encoding: 111.489
+encoding: 111.307
+encoding: 112.362
+encoding: 111.696
+encoding: 111.899
+encoding: 111.678
+encoding: 112.120
+encoding: 111.564
+encoding: 112.000
+encoding: 112.076
+encoding: 112.120
+encoding: 111.892
+encoding: 111.282
+encoding: 111.640
+encoding: 111.880
+encoding: 112.000
+encoding: 111.633
+encoding: 112.273
+encoding: 112.070
+encoding: 111.709
+encoding: 111.627
+encoding: 112.222
+encoding: 112.070
+encoding: 112.356
+encoding: 111.432
+encoding: 111.880
+encoding: 111.810
+encoding: 111.621
+encoding: 112.209
+encoding: 112.114
+encoding: 97.748
+encoding: 95.901
+decomp: 42.311
+decomp: 41.008
+decomp: 46.999
+decomp: 46.431
+decomp: 40.790
+decomp: 42.158
+decomp: 47.683
+decomp: 47.699
+decomp: 47.702
+decomp: 47.701
+decomp: 47.698
+decomp: 47.701
+decomp: 47.701
+decomp: 47.697
+decomp: 47.706
+decomp: 47.157
+decomp: 40.880
+decomp: 41.842
+decomp: 41.675
+decomp: 42.454
+decomp: 47.684
+decomp: 47.693
+decomp: 47.711
+decomp: 47.695
+decomp: 45.768
+decomp: 40.475
+decomp: 40.581
+decomp: 47.319
+decomp: 45.610
+decomp: 47.700
+decomp: 47.682
+decomp: 47.698
+decomp: 42.124
+decomp: 40.867
+decomp: 47.204
+decomp: 47.686
+decomp: 47.706
+decomp: 47.693
+decomp: 47.708
+decomp: 47.687
+decomp: 47.691
+decomp: 47.694
+decomp: 46.792
+decomp: 47.683
+decomp: 47.687
+decomp: 46.345
+decomp: 41.270
+decomp: 40.966
+decomp: 41.294
+decomp: 41.531
+decomp: 41.495
+decomp: 42.401
+decomp: 47.697
+decomp: 44.557
+decomp: 47.675
+decomp: 47.700
+decomp: 47.716
+decomp: 47.687
+decomp: 47.842
+decomp: 46.949
+decomp: 47.678
+decomp: 42.471
+decomp: 40.585
+decomp: 44.472
+decomp: 47.674
+decomp: 46.014
+decomp: 47.688
+decomp: 47.787
+decomp: 47.711
+decomp: 47.694
+decomp: 47.695
+decomp: 47.706
+decomp: 47.710
+decomp: 46.883
+decomp: 47.697
+decomp: 47.688
+decomp: 47.695
+decomp: 47.685
+decomp: 47.664
+decomp: 47.680
+decomp: 47.666
+decomp: 47.684
+decomp: 47.670
+decomp: 47.687
+decomp: 47.705
+decomp: 47.693
+decomp: 47.709
+decomp: 46.973
+decomp: 47.663
+decomp: 46.491
+decomp: 47.654
+decomp: 42.480
+decomp: 41.051
+decomp: 41.162
+decomp: 40.331
+decomp: 46.999
+decomp: 47.674
+decomp: 47.683
+decomp: 47.706
+decomp: 42.555
+error: 410900480 -> 32 != 0
+error: 410900481 -> 98 != 0
+error: 434961920 -> 32 != 0
+error: 496384000 -> 115 != 0
+error: 496384001 -> 104 != 0
+error: 549381120 -> 102 != 0
+error: 920491520 -> 111 != 0
+Cycles (100, 100) completed. Stats:
+	Parameters:
+		Block size: 409600
+		Input size: 1979596800
+		Effective table size: 63078400
+		File name: ../../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 36026
+		Throughput (GB/s): 56.773
+		Compressed size: 705606043
+	Decompression:
+		Duration (us): 43263
+		Throughput (GB/s): 45.757
+		Ratio: 2.8055
+	Compression phases:
+		Table generation (GB/s, us): 777.532 (2546)
+		Precomputation (GB/s, us): 79183.872 (25)
+		Encoding (GB/s, us): 109.364 (18101)
+		Postprocessing (GB/s, us): 138.395 (14304)

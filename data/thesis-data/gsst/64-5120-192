@@ -1,0 +1,237 @@
+Strict output checking is disabled, decompressed data might not match original data!
+encoding: 65.493
+encoding: 103.374
+encoding: 110.476
+encoding: 111.711
+encoding: 110.848
+encoding: 110.916
+encoding: 96.931
+encoding: 95.791
+encoding: 99.608
+encoding: 99.398
+encoding: 96.486
+encoding: 109.517
+encoding: 111.159
+encoding: 110.557
+encoding: 111.422
+encoding: 110.773
+encoding: 111.271
+encoding: 110.310
+encoding: 111.246
+encoding: 111.290
+encoding: 95.680
+encoding: 96.732
+encoding: 99.588
+encoding: 105.383
+encoding: 103.068
+encoding: 110.581
+encoding: 110.606
+encoding: 111.078
+encoding: 110.004
+encoding: 110.606
+encoding: 111.078
+encoding: 111.040
+encoding: 111.184
+encoding: 109.827
+encoding: 108.395
+encoding: 110.384
+encoding: 111.246
+encoding: 111.227
+encoding: 110.798
+encoding: 109.547
+encoding: 110.984
+encoding: 107.946
+encoding: 104.460
+encoding: 105.400
+encoding: 111.252
+encoding: 111.096
+encoding: 105.047
+encoding: 111.040
+encoding: 110.730
+encoding: 110.532
+encoding: 111.447
+encoding: 110.953
+encoding: 105.732
+encoding: 111.121
+encoding: 110.427
+encoding: 110.218
+encoding: 105.484
+encoding: 109.602
+encoding: 111.472
+encoding: 101.156
+encoding: 101.488
+encoding: 109.857
+encoding: 110.157
+encoding: 110.433
+encoding: 110.717
+encoding: 105.557
+encoding: 109.863
+encoding: 111.309
+encoding: 110.292
+encoding: 110.304
+encoding: 111.128
+encoding: 111.246
+encoding: 104.064
+encoding: 111.103
+encoding: 110.984
+encoding: 109.596
+encoding: 111.128
+encoding: 110.736
+encoding: 110.532
+encoding: 110.717
+encoding: 111.271
+encoding: 110.959
+encoding: 111.290
+encoding: 109.766
+encoding: 111.003
+encoding: 111.497
+encoding: 110.959
+encoding: 110.396
+encoding: 110.507
+encoding: 108.076
+encoding: 110.581
+encoding: 111.271
+encoding: 111.396
+encoding: 110.810
+encoding: 109.979
+encoding: 110.953
+encoding: 111.365
+encoding: 110.668
+encoding: 111.090
+encoding: 111.321
+decomp: 31.100
+decomp: 32.089
+decomp: 32.118
+decomp: 32.124
+decomp: 32.091
+decomp: 32.089
+decomp: 32.095
+decomp: 32.108
+decomp: 32.100
+decomp: 32.099
+decomp: 32.108
+decomp: 32.085
+decomp: 31.669
+decomp: 32.077
+decomp: 32.100
+decomp: 32.095
+decomp: 32.102
+decomp: 32.100
+decomp: 32.106
+decomp: 32.096
+decomp: 32.089
+decomp: 32.076
+decomp: 32.082
+decomp: 32.117
+decomp: 32.100
+decomp: 32.104
+decomp: 32.109
+decomp: 32.109
+decomp: 32.119
+decomp: 32.119
+decomp: 32.089
+decomp: 32.103
+decomp: 29.028
+decomp: 31.193
+decomp: 32.077
+decomp: 32.089
+decomp: 32.104
+decomp: 32.093
+decomp: 32.096
+decomp: 32.094
+decomp: 32.103
+decomp: 32.089
+decomp: 32.113
+decomp: 32.108
+decomp: 32.106
+decomp: 32.102
+decomp: 32.094
+decomp: 31.510
+decomp: 32.093
+decomp: 32.126
+decomp: 32.110
+decomp: 32.078
+decomp: 32.094
+decomp: 28.543
+decomp: 28.270
+decomp: 28.411
+decomp: 31.903
+decomp: 32.087
+decomp: 32.081
+decomp: 32.117
+decomp: 32.102
+decomp: 32.082
+decomp: 32.085
+decomp: 31.550
+decomp: 32.097
+decomp: 32.082
+decomp: 32.087
+decomp: 32.100
+decomp: 32.083
+decomp: 31.668
+decomp: 32.109
+decomp: 31.662
+decomp: 32.092
+decomp: 31.232
+decomp: 31.657
+decomp: 32.087
+decomp: 32.115
+decomp: 32.098
+decomp: 32.100
+decomp: 31.649
+decomp: 32.090
+decomp: 32.097
+decomp: 32.101
+decomp: 32.092
+decomp: 32.104
+decomp: 32.102
+decomp: 32.109
+decomp: 32.080
+decomp: 29.208
+decomp: 28.465
+decomp: 28.803
+decomp: 30.200
+decomp: 31.981
+decomp: 31.807
+decomp: 31.672
+decomp: 31.987
+decomp: 31.815
+decomp: 32.083
+decomp: 32.097
+decomp: 32.109
+error: 159421440 -> 10 != 0
+error: 761615360 -> 32 != 0
+error: 1040916480 -> 111 != 0
+error: 1040916481 -> 108 != 0
+error: 1040916482 -> 100 != 0
+error: 1040916483 -> 32 != 0
+error: 1040916484 -> 116 != 0
+error: 1043112960 -> 46 != 0
+error: 1043112961 -> 32 != 0
+error: 1043112962 -> 105 != 0
+error: 1043112963 -> 100 != 0
+error: 1043112964 -> 101 != 0
+error: 1228631040 -> 112 != 0
+error: 1228631041 -> 108 != 0
+error: 1228631042 -> 105 != 0
+error: 1228631043 -> 101 != 0
+error: 1733278720 -> 101 != 0
+Cycles (100, 100) completed. Stats:
+	Parameters:
+		Block size: 327680
+		Input size: 1979514880
+		Effective table size: 62914560
+		File name: ../../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 38287
+		Throughput (GB/s): 54.212
+		Compressed size: 707164916
+	Decompression:
+		Duration (us): 62372
+		Throughput (GB/s): 31.737
+		Ratio: 2.7992
+	Compression phases:
+		Table generation (GB/s, us): 748.116 (2646)
+		Precomputation (GB/s, us): 79180.595 (25)
+		Encoding (GB/s, us): 107.952 (18337)
+		Postprocessing (GB/s, us): 118.406 (16718)

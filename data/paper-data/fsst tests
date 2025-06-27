@@ -1,0 +1,83 @@
+TPC-H:
+    2.068, 1.458 => 1.763
+    3.464,  2.744 => 3.104
+GDelt:
+    1.202
+    2.143
+DBText:
+	1.276, 1.334, 0.950, 1.169, 1.111, 0.922, 0.999 => 1.1087142857143
+	2.325, 2.336, 1.559, 2.031, 1.999, 1.576, 1.846 => 1.9531428571429
+
+
+./fsst ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 12.295 154378 340
+	Encoding (GB/s, us, us/block): 2.487 763317 1684
+	Total (GB/s, us): 2.068 917695
+	Ratio: 3.464
+	Block size: 4194304 (modifier = 1)
+./fsst ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 5.949 332788 703
+	Encoding (GB/s, us, us/block): 1.932 1024854 2166
+	Total (GB/s, us): 1.458 1357642
+	Ratio: 2.744
+	Block size: 4194304 (modifier = 1)
+
+./fsst ~/thesis-testing/gdelt-locations/output_locations.txt
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 5.857 366657 714
+	Encoding (GB/s, us, us/block): 1.513 1419415 2766
+	Total (GB/s, us): 1.202 1786072
+	Ratio: 2.143
+	Block size: 4194304 (modifier = 1)
+
+./fsst ~/thesis-testing/dbtext-inflated-2gb/output_urls
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 5.909 363396 708
+	Encoding (GB/s, us, us/block): 1.627 1320068 2572
+	Total (GB/s, us): 1.276 1683464
+	Ratio: 2.325
+	Block size: 4194304 (modifier = 1)
+./fsst ~/thesis-testing/dbtext-inflated-2gb/output_uuid
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 5.459 393411 766
+	Encoding (GB/s, us, us/block): 1.766 1216025 2369
+	Total (GB/s, us): 1.334 1609436
+	Ratio: 2.336
+	Block size: 4194304 (modifier = 1)
+./fsst ~/thesis-testing/dbtext-inflated-2gb/output_yago
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.232 507388 988
+	Encoding (GB/s, us, us/block): 1.224 1754041 3418
+	Total (GB/s, us): 0.950 2261429
+	Ratio: 1.559
+	Block size: 4194304 (modifier = 1)
+./fsst ~/thesis-testing/dbtext-inflated-2gb/output_email
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.972 431892 841
+	Encoding (GB/s, us, us/block): 1.529 1404437 2737
+	Total (GB/s, us): 1.169 1836329
+	Ratio: 2.031
+	Block size: 4194304 (modifier = 1)
+./fsst ~/thesis-testing/dbtext-inflated-2gb/output_urls2
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 5.120 419406 817
+	Encoding (GB/s, us, us/block): 1.418 1514286 2951
+	Total (GB/s, us): 1.111 1933692
+	Ratio: 1.999
+	Block size: 4194304 (modifier = 1)
+./fsst ~/thesis-testing/dbtext-inflated-2gb/output_wiki
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.093 524666 1022
+	Encoding (GB/s, us, us/block): 1.189 1805644 3519
+	Total (GB/s, us): 0.922 2330310
+	Ratio: 1.576
+	Block size: 4194304 (modifier = 1)
+./fsst ~/thesis-testing/dbtext-inflated-2gb/output_hex
+Completed 5 iterations:
+	Table gen (GB/s, us, us/block): 4.142 518493 1010
+	Encoding (GB/s, us, us/block): 1.317 1631026 3179
+	Total (GB/s, us): 0.999 2149519
+	Ratio: 1.846
+	Block size: 4194304 (modifier = 1)

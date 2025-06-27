@@ -1,0 +1,67 @@
+32 threads:
+ registers: 48
+ smem: 5650
+ occupancy: 0.3125
+ threads per sm: 480
+ blocks per sm: 15
+
+64 threads:
+ registers: 48
+ smem: 7700
+ occupancy: 0.4583
+ threads per sm: 704
+ blocks per sm: 11
+
+96 threads:
+ registers: 48
+ smem: 9760
+ occupancy: 0.5625
+ threads per sm: 864
+ blocks per sm: 9
+
+128 threads:
+ registers: 48
+ smem: 11810
+ occupancy: 0.5833
+ threads per sm: 896
+ blocks per sm: 7
+
+160 threads:
+ registers: 48
+ smem: 13870
+ occupancy: 0.625
+ threads per sm: 960
+ blocks per sm: 6
+
+rtx 4090 sms: 128
+  32 - max blocks: 1920
+  32 - use blocks 2GB: [48320, 24160, 12080, 6040, 3020, 755, 377]
+  32 - use blocks 4GB: [96640, 48320, 24160, 12080, 6040, 1510, 755]
+  64 - max blocks: 1408
+  64 - use blocks 2GB: [24160, 12080, 6040, 3020, 1510, 377, 188]
+  64 - use blocks 4GB: [48320, 24160, 12080, 6040, 3020, 755, 377]
+  96 - max blocks: 1152
+  96 - use blocks 2GB: [16106, 8053, 4026, 2013, 1006, 251, 125]
+  96 - use blocks 4GB: [32213, 16106, 8053, 4026, 2013, 503, 251]
+  128 - max blocks: 896
+  128 - use blocks 2GB: [12080, 6040, 3020, 1510, 755, 188, 94]
+  128 - use blocks 4GB: [24160, 12080, 6040, 3020, 1510, 377, 188]
+  160 - max blocks: 768
+  160 - use blocks 2GB: [9664, 4832, 2416, 1208, 604, 151, 75]
+  160 - use blocks 4GB: [19328, 9664, 4832, 2416, 1208, 302, 151]
+rtx 5090 sms: 170
+  32 - max blocks: 2550
+  32 - use blocks 2GB: [48320, 24160, 12080, 6040, 3020, 755, 377]
+  32 - use blocks 4GB: [96640, 48320, 24160, 12080, 6040, 1510, 755]
+  64 - max blocks: 1870
+  64 - use blocks 2GB: [24160, 12080, 6040, 3020, 1510, 377, 188]
+  64 - use blocks 4GB: [48320, 24160, 12080, 6040, 3020, 755, 377]
+  96 - max blocks: 1530
+  96 - use blocks 2GB: [16106, 8053, 4026, 2013, 1006, 251, 125]
+  96 - use blocks 4GB: [32213, 16106, 8053, 4026, 2013, 503, 251]
+  128 - max blocks: 1190
+  128 - use blocks 2GB: [12080, 6040, 3020, 1510, 755, 188, 94]
+  128 - use blocks 4GB: [24160, 12080, 6040, 3020, 1510, 377, 188]
+  160 - max blocks: 1020
+  160 - use blocks 2GB: [9664, 4832, 2416, 1208, 604, 151, 75]
+  160 - use blocks 4GB: [19328, 9664, 4832, 2416, 1208, 302, 151]

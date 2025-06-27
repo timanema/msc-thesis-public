@@ -1,0 +1,43 @@
+nvcomp 50 runs (comp+decomp)
+v5t 250 runs (comp)
+lc3+gpulz 1 run (comp+decomp)
+
+1979644096 bytes (2GB)
+
+lc3:
+ peak: 84.09
+ throughput: 278.726
+ duration: 0.0071024
+ energy: 0.60 Ws
+
+ans
+ peak: 139.06
+ throughput: 208.2415
+ duration: 0.00959648
+ energy: 1.33 Ws
+
+v5t:
+ peak: 363.44
+ throughput: 73.615
+ duration: 0.026892
+ energy: 9.77 Ws
+
+gpulz:
+ peak: 148.30
+ throughput: 23.1045
+ duration: 0.085682
+ energy: 12.71 Ws
+
+snappy:
+ peak: 314.78
+ throughput: 12.1527
+ duration: 0.1629
+ energy: 51.28 Ws
+
+lz4
+ peak: 385.36
+ throughput: 10.3791
+ duration: 0.19073
+ energy: 73.5 Ws
+
+

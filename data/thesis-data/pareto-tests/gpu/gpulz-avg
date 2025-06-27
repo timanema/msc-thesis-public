@@ -1,0 +1,59 @@
+TPC-H:
+    3.13635, 1.09313 => 2.1147
+    23.9866, 23.157 => 23.5718
+GDelt:
+    1.4411
+    23.0807
+DBText:
+	1.24729, 1.20297, 0.973607, 1.13403, 1.17719, 0.97871, 0.968844 => 1.0975
+	23.7577, 23.5496, 22.8699, 22.6285, 23.5184, 22.7558, 22.8917 => 23.1388
+
+
+Settings (C=4096,W=128,S=2)
+#define BLOCK_SIZE 4096
+#define WINDOW_SIZE 128
+#define INPUT_TYPE uint32_t
+
+
+./gpulz -i ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt
+compression ratio: 3.13635
+compression e2e throughput: 23.9866 GB/s
+decompression e2e throughput: 61.7223 GB/s
+./gpulz -i ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+compression ratio: 1.09313
+compression e2e throughput: 23.157 GB/s
+decompression e2e throughput: 33.3669 GB/s
+
+./gpulz -i ~/thesis-testing/gdelt-locations/output_locations.txt
+compression ratio: 1.44105
+compression e2e throughput: 23.0807 GB/s
+decompression e2e throughput: 37.691 GB/s
+
+./gpulz -i ~/thesis-testing/dbtext-inflated-2gb/output_urls
+compression ratio: 1.24729
+compression e2e throughput: 23.7577 GB/s
+decompression e2e throughput: 33.8822 GB/s
+./gpulz -i ~/thesis-testing/dbtext-inflated-2gb/output_uuid
+compression ratio: 1.20297
+compression e2e throughput: 23.5496 GB/s
+decompression e2e throughput: 32.7081 GB/s
+./gpulz -i ~/thesis-testing/dbtext-inflated-2gb/output_yago
+compression ratio: 0.973607
+compression e2e throughput: 22.8699 GB/s
+decompression e2e throughput: 26.2044 GB/s
+./gpulz -i ~/thesis-testing/dbtext-inflated-2gb/output_email
+compression ratio: 1.13403
+compression e2e throughput: 22.6285 GB/s
+decompression e2e throughput: 31.6125 GB/s
+./gpulz -i ~/thesis-testing/dbtext-inflated-2gb/output_urls2
+compression ratio: 1.17719
+compression e2e throughput: 23.5184 GB/s
+decompression e2e throughput: 32.5574 GB/s
+./gpulz -i ~/thesis-testing/dbtext-inflated-2gb/output_wiki
+compression ratio: 0.97871
+compression e2e throughput: 22.7558 GB/s
+decompression e2e throughput: 27.0929 GB/s
+./gpulz -i ~/thesis-testing/dbtext-inflated-2gb/output_hex
+compression ratio: 0.968844
+compression e2e throughput: 22.8917 GB/s
+decompression e2e throughput: 25.842 GB/s

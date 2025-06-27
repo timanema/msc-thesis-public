@@ -1,0 +1,60 @@
+./benchmark_ans_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1193823104, compressed ratio: 1.7988
+compression throughput (GB/s): 389.6867
+decompression throughput (GB/s): 735.6336
+
+./benchmark_bitcomp_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1825114424, compressed ratio: 1.1766
+compression throughput (GB/s): 813.8723
+decompression throughput (GB/s): 466.6984
+
+./benchmark_cascaded_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 2147745792, compressed ratio: 0.9999
+compression throughput (GB/s): 204.5117
+decompression throughput (GB/s): 695.4392
+
+./benchmark_deflate_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 796934729, compressed ratio: 2.6947
+compression throughput (GB/s): 14.8831
+decompression throughput (GB/s): 47.4559
+
+./benchmark_gdeflate_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 803154364, compressed ratio: 2.6738
+compression throughput (GB/s): 14.9677
+decompression throughput (GB/s): 60.6447
+
+./benchmark_lz4_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1002923641, compressed ratio: 2.1412
+compression throughput (GB/s): 18.0884
+decompression throughput (GB/s): 125.1906
+
+./benchmark_snappy_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 928226477, compressed ratio: 2.3135
+compression throughput (GB/s): 14.6798
+decompression throughput (GB/s): 116.4916
+
+./benchmark_zstd_chunked -i 100 -f /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  ERROR: BatchedDecompressAsync() not successful
+Aborted

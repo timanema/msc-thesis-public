@@ -1,0 +1,85 @@
+TPC-H:
+    31.0125, 12.1681 => 21.5903
+    3.8055, 2.3135 => 3.0595
+GDelt:
+    29.7162
+    4.2994
+DBText:
+	24.3230, 20.0016, 17.7435, 19.6132, 20.3796, 16.6527, 24.3397 => 20.436185714286
+	2.6183, 1.4188, 1.1450, 1.4477, 1.6683, 1.1995, 1.0346 => 1.5046
+
+
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 1898100000
+comp_size: 498776112, compressed ratio: 3.8055
+compression throughput (GB/s): 31.0125
+decompression throughput (GB/s): 116.2474
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 1979644096
+comp_size: 855698074, compressed ratio: 2.3135
+compression throughput (GB/s): 12.1681
+decompression throughput (GB/s): 82.3492
+
+
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/gdelt-locations/output_locations.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 499488145, compressed ratio: 4.2994
+compression throughput (GB/s): 29.7162
+decompression throughput (GB/s): 117.9986
+
+
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_urls
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 820183483, compressed ratio: 2.6183
+compression throughput (GB/s): 24.3230
+decompression throughput (GB/s): 93.3415
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_uuid
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1513618228, compressed ratio: 1.4188
+compression throughput (GB/s): 20.0016
+decompression throughput (GB/s): 68.1704
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_yago
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1875518818, compressed ratio: 1.1450
+compression throughput (GB/s): 17.7435
+decompression throughput (GB/s): 66.9549
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_email
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1483379433, compressed ratio: 1.4477
+compression throughput (GB/s): 19.6132
+decompression throughput (GB/s): 72.0573
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_urls2
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1287253408, compressed ratio: 1.6683
+compression throughput (GB/s): 20.3796
+decompression throughput (GB/s): 73.0166
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_wiki
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1790375986, compressed ratio: 1.1995
+compression throughput (GB/s): 16.6527
+decompression throughput (GB/s): 62.4570
+./benchmark_snappy_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_hex
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 2075611265, compressed ratio: 1.0346
+compression throughput (GB/s): 24.3397
+decompression throughput (GB/s): 72.3135

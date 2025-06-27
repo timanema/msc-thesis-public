@@ -1,0 +1,123 @@
+Strict output checking is disabled, decompressed data might not match original data!
+encoding: 60.891
+encoding: 87.000
+encoding: 87.012
+encoding: 88.265
+encoding: 75.321
+encoding: 77.234
+encoding: 77.153
+encoding: 77.967
+encoding: 77.787
+encoding: 91.466
+encoding: 90.920
+encoding: 91.298
+encoding: 91.171
+encoding: 90.929
+encoding: 87.783
+encoding: 91.092
+encoding: 88.379
+encoding: 90.979
+encoding: 91.171
+encoding: 88.218
+encoding: 90.662
+encoding: 90.933
+encoding: 90.870
+encoding: 91.075
+encoding: 91.201
+encoding: 90.687
+encoding: 81.812
+encoding: 78.341
+encoding: 80.052
+encoding: 91.188
+encoding: 90.975
+encoding: 90.979
+encoding: 90.699
+encoding: 90.762
+encoding: 90.912
+encoding: 90.920
+encoding: 90.862
+encoding: 90.158
+encoding: 90.733
+encoding: 90.031
+encoding: 90.845
+encoding: 83.387
+encoding: 85.170
+encoding: 85.250
+encoding: 84.929
+encoding: 90.418
+encoding: 90.949
+encoding: 90.908
+encoding: 90.878
+encoding: 90.712
+decomp: 28.218
+decomp: 28.542
+decomp: 27.766
+decomp: 27.921
+decomp: 28.279
+decomp: 28.365
+decomp: 28.342
+decomp: 28.178
+decomp: 28.555
+decomp: 28.706
+decomp: 28.025
+decomp: 28.355
+decomp: 28.707
+decomp: 28.355
+decomp: 28.028
+decomp: 28.704
+decomp: 28.704
+decomp: 28.249
+decomp: 28.135
+decomp: 28.704
+decomp: 28.364
+decomp: 28.704
+decomp: 28.710
+decomp: 28.368
+decomp: 28.698
+decomp: 28.707
+decomp: 28.702
+decomp: 28.713
+decomp: 28.697
+decomp: 28.702
+decomp: 28.702
+decomp: 28.712
+decomp: 28.717
+decomp: 28.694
+decomp: 28.693
+decomp: 28.702
+decomp: 28.704
+decomp: 28.695
+decomp: 28.710
+decomp: 28.705
+decomp: 28.428
+decomp: 28.693
+decomp: 28.707
+decomp: 28.712
+decomp: 28.707
+decomp: 28.709
+decomp: 28.348
+decomp: 28.694
+decomp: 28.715
+decomp: 28.705
+error: 865863680 -> 105 != 0
+error: 998144000 -> 114 != 0
+error: 1733283840 -> 117 != 0
+Cycles (50, 50) completed. Stats:
+	Parameters:
+		Block size: 327680
+		Input size: 1979514880
+		Effective table size: 62914560
+		File name: ../../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 40931
+		Throughput (GB/s): 49.096
+		Compressed size: 706119574
+	Decompression:
+		Duration (us): 69381
+		Throughput (GB/s): 28.531
+		Ratio: 2.8034
+	Compression phases:
+		Table generation (GB/s, us): 747.269 (2649)
+		Precomputation (GB/s, us): 70696.960 (28)
+		Encoding (GB/s, us): 86.889 (22782)
+		Postprocessing (GB/s, us): 132.925 (14892)

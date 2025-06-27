@@ -1,0 +1,121 @@
+Strict output checking is disabled, decompressed data might not match original data!
+encoding: 64.112
+encoding: 98.146
+encoding: 106.672
+encoding: 107.227
+encoding: 106.146
+encoding: 105.299
+encoding: 106.283
+encoding: 106.426
+encoding: 106.140
+encoding: 106.856
+encoding: 105.411
+encoding: 106.055
+encoding: 98.103
+encoding: 102.934
+encoding: 105.131
+encoding: 106.741
+encoding: 105.783
+encoding: 106.758
+encoding: 105.839
+encoding: 106.089
+encoding: 106.117
+encoding: 106.741
+encoding: 102.063
+encoding: 105.552
+encoding: 105.907
+encoding: 105.732
+encoding: 105.885
+encoding: 106.334
+encoding: 106.357
+encoding: 106.186
+encoding: 105.120
+encoding: 106.363
+encoding: 105.653
+encoding: 105.568
+encoding: 105.885
+encoding: 105.585
+encoding: 106.306
+encoding: 105.422
+encoding: 106.112
+encoding: 105.518
+encoding: 102.279
+encoding: 101.816
+encoding: 105.890
+encoding: 106.061
+encoding: 105.664
+encoding: 106.597
+encoding: 105.400
+encoding: 105.484
+encoding: 105.879
+encoding: 105.529
+decomp: 8.823
+decomp: 8.862
+decomp: 8.837
+decomp: 8.829
+decomp: 8.776
+decomp: 8.817
+decomp: 8.809
+decomp: 8.839
+decomp: 8.840
+decomp: 8.838
+decomp: 8.861
+decomp: 8.863
+decomp: 8.779
+decomp: 8.837
+decomp: 8.862
+decomp: 8.840
+decomp: 8.862
+decomp: 8.829
+decomp: 8.794
+decomp: 8.794
+decomp: 8.861
+decomp: 8.862
+decomp: 8.842
+decomp: 8.862
+decomp: 8.799
+decomp: 8.863
+decomp: 8.870
+decomp: 8.833
+decomp: 8.864
+decomp: 8.864
+decomp: 8.840
+decomp: 8.862
+decomp: 8.842
+decomp: 8.863
+decomp: 8.788
+decomp: 8.804
+decomp: 8.830
+decomp: 8.723
+decomp: 8.862
+decomp: 8.798
+decomp: 8.829
+decomp: 8.811
+decomp: 8.799
+decomp: 8.782
+decomp: 8.863
+decomp: 8.864
+decomp: 8.812
+decomp: 8.865
+decomp: 8.830
+decomp: 8.862
+error: decompression length mismatch. Expected 1979514880, was 1979514876
+Cycles (50, 50) completed. Stats:
+	Parameters:
+		Block size: 163840
+		Input size: 1979514880
+		Effective table size: 62914560
+		File name: ../../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 50329
+		Throughput (GB/s): 40.583
+		Compressed size: 713490196
+	Decompression:
+		Duration (us): 224112
+		Throughput (GB/s): 8.833
+		Ratio: 2.7744
+	Compression phases:
+		Table generation (GB/s, us): 740.006 (2675)
+		Precomputation (GB/s, us): 79180.595 (25)
+		Encoding (GB/s, us): 103.999 (19034)
+		Postprocessing (GB/s, us): 76.088 (26016)

@@ -1,0 +1,60 @@
+TPC-H:
+    1.320, 1.193 => 1.2565
+    173.914, 170.751 =>
+GDelt:
+    1.147
+    43.260
+DBText:
+	1.173,1.138,1.122,1.190,1.192,1.129,1.175 => 1.1598
+	98.430,88.398,49.522,55.609,40.578,58.556,31.292 => 60.3407
+
+
+
+Best Algorithm Found: RARE_1 HCLOG_1
+Compression Ratio: 1.193
+./generate_standalone_GPU_compressor_decompressor.py "" "RARE_1 HCLOG_1"
+nvcc -O3 -arch=sm_80 -fmad=false -Xcompiler "-O3 -march=native -fopenmp -mno-fma -ffp-contract=off" -I. -std=c++17 -o compress compressor-standalone.cu
+
+
+./compress ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt /tmp/lc-out y
+ratio:  75.77%   1.320x
+encoding time: 0.010914 s
+encoding throughput:  173.914 Gbytes/s
+./compress ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt /tmp/lc-out y
+ratio:  83.85%   1.193x
+encoding time: 0.011594 s
+encoding throughput:  170.751 Gbytes/s
+
+./compress ~/thesis-testing/gdelt-locations/locations.txt /tmp/lc-out y
+ratio:  87.22%   1.147x
+encoding time: 0.000039 s
+encoding throughput:   43.260 Gbytes/s
+
+./compress ~/thesis-testing/dbtext/urls /tmp/lc-out y
+ratio:  85.26%   1.173x
+encoding time: 0.000064 s
+encoding throughput:   98.430 Gbytes/s
+./compress ~/thesis-testing/dbtext/uuid /tmp/lc-out y
+ratio:  87.89%   1.138x
+encoding time: 0.000042 s
+encoding throughput:   88.398 Gbytes/s
+./compress ~/thesis-testing/dbtext/yago /tmp/lc-out y
+ratio:  89.12%   1.122x
+encoding time: 0.000039 s
+encoding throughput:   49.522 Gbytes/s
+./compress ~/thesis-testing/dbtext/email /tmp/lc-out y
+ratio:  84.05%   1.190x
+encoding time: 0.000040 s
+encoding throughput:   55.609 Gbytes/s
+./compress ~/thesis-testing/dbtext/urls2 /tmp/lc-out y
+ratio:  83.87%   1.192x
+encoding time: 0.000041 s
+encoding throughput:   40.578 Gbytes/s
+./compress ~/thesis-testing/dbtext/wiki /tmp/lc-out y
+ratio:  88.56%   1.129x
+encoding time: 0.000040 s
+encoding throughput:   58.556 Gbytes/s
+./compress ~/thesis-testing/dbtext/hex /tmp/lc-out y
+ratio:  85.12%   1.175x
+encoding time: 0.000039 s
+encoding throughput:   31.292 Gbytes/s

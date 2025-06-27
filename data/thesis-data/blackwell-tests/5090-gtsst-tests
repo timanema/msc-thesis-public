@@ -1,0 +1,343 @@
+V5T-GSST:
+encoding: 92.745
+encoding: 151.922
+encoding: 152.342
+encoding: 152.256
+encoding: 152.299
+encoding: 151.482
+encoding: 152.083
+encoding: 151.761
+encoding: 151.664
+encoding: 151.847
+encoding: 152.105
+encoding: 151.954
+encoding: 151.868
+encoding: 151.825
+encoding: 151.868
+encoding: 151.933
+encoding: 151.868
+encoding: 151.857
+encoding: 151.771
+encoding: 151.933
+encoding: 151.911
+encoding: 151.696
+encoding: 152.008
+encoding: 151.890
+encoding: 151.997
+encoding: 152.094
+encoding: 151.868
+encoding: 151.879
+encoding: 151.943
+encoding: 151.729
+encoding: 151.793
+encoding: 150.463
+encoding: 150.674
+encoding: 151.911
+encoding: 151.707
+encoding: 150.368
+encoding: 150.232
+encoding: 151.664
+encoding: 151.933
+encoding: 151.900
+encoding: 151.836
+encoding: 151.729
+encoding: 151.911
+encoding: 152.072
+encoding: 151.890
+encoding: 151.814
+encoding: 151.814
+encoding: 151.793
+encoding: 151.890
+encoding: 151.857
+encoding: 152.029
+encoding: 151.900
+encoding: 151.825
+encoding: 151.589
+encoding: 151.922
+encoding: 151.729
+encoding: 151.976
+encoding: 151.825
+encoding: 151.997
+encoding: 151.911
+encoding: 151.761
+encoding: 151.900
+encoding: 151.879
+encoding: 151.868
+encoding: 151.986
+encoding: 151.890
+encoding: 151.836
+encoding: 151.997
+encoding: 151.696
+encoding: 151.825
+encoding: 151.954
+encoding: 151.997
+encoding: 151.976
+encoding: 151.965
+encoding: 151.976
+encoding: 151.621
+encoding: 151.621
+encoding: 151.696
+encoding: 151.933
+encoding: 151.954
+encoding: 151.965
+encoding: 151.814
+encoding: 151.536
+encoding: 151.718
+encoding: 152.008
+encoding: 151.836
+encoding: 151.965
+encoding: 151.847
+encoding: 151.933
+encoding: 151.782
+encoding: 151.965
+encoding: 151.793
+encoding: 152.040
+encoding: 151.890
+encoding: 152.008
+encoding: 151.825
+encoding: 151.954
+encoding: 151.600
+encoding: 151.943
+encoding: 152.019
+decomp: 220.133
+decomp: 303.629
+decomp: 304.533
+decomp: 304.836
+decomp: 304.274
+decomp: 304.966
+decomp: 305.096
+decomp: 304.576
+decomp: 304.663
+decomp: 304.576
+decomp: 304.706
+decomp: 304.663
+decomp: 304.923
+decomp: 305.009
+decomp: 304.361
+decomp: 305.052
+decomp: 304.966
+decomp: 305.226
+decomp: 305.661
+decomp: 305.226
+decomp: 304.576
+decomp: 305.183
+decomp: 304.706
+decomp: 304.706
+decomp: 305.661
+decomp: 305.661
+decomp: 304.663
+decomp: 305.226
+decomp: 305.183
+decomp: 305.226
+decomp: 305.096
+decomp: 304.447
+decomp: 305.704
+decomp: 305.356
+decomp: 305.573
+decomp: 305.226
+decomp: 305.661
+decomp: 305.183
+decomp: 305.226
+decomp: 305.226
+decomp: 305.052
+decomp: 305.226
+decomp: 305.139
+decomp: 305.748
+decomp: 305.226
+decomp: 305.226
+decomp: 304.749
+decomp: 304.404
+decomp: 304.361
+decomp: 304.361
+decomp: 305.791
+decomp: 304.706
+decomp: 304.706
+decomp: 305.052
+decomp: 304.706
+decomp: 305.226
+decomp: 305.139
+decomp: 304.706
+decomp: 305.573
+decomp: 305.748
+decomp: 304.663
+decomp: 305.052
+decomp: 305.009
+decomp: 304.706
+decomp: 304.620
+decomp: 305.096
+decomp: 304.274
+decomp: 304.145
+decomp: 304.966
+decomp: 304.966
+decomp: 304.145
+decomp: 304.576
+decomp: 305.226
+decomp: 304.620
+decomp: 305.791
+decomp: 305.052
+decomp: 305.791
+decomp: 305.269
+decomp: 305.226
+decomp: 305.096
+decomp: 304.490
+decomp: 305.487
+decomp: 304.663
+decomp: 304.923
+decomp: 305.530
+decomp: 304.966
+decomp: 305.443
+decomp: 305.748
+decomp: 305.183
+decomp: 305.052
+decomp: 304.706
+decomp: 305.226
+decomp: 305.704
+decomp: 305.269
+decomp: 305.617
+decomp: 305.573
+decomp: 304.706
+decomp: 304.706
+decomp: 304.663
+decomp: 303.887
+error: 460165120 -> 99 != 0
+Cycles (100, 100) completed. Stats:
+	Parameters:
+		Block size: 2621440
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 24940
+		Throughput (GB/s): 86.382
+		Compressed size: 763794610
+	Decompression:
+		Duration (us): 7066
+		Throughput (GB/s): 303.844
+		Ratio: 2.8109
+	Compression phases:
+		Table generation (GB/s, us): 494.236 (4344)
+		Precomputation (GB/s, us): 97589.062 (22)
+		Encoding (GB/s, us): 150.865 (14231)
+		Postprocessing (GB/s, us): 394.372 (5444)
+
+V5T:
+encoding: 99.093
+encoding: 174.919
+encoding: 174.663
+encoding: 174.976
+encoding: 174.663
+encoding: 174.564
+encoding: 174.535
+encoding: 174.834
+encoding: 174.805
+encoding: 174.606
+encoding: 174.848
+encoding: 174.805
+encoding: 174.706
+encoding: 174.919
+encoding: 174.820
+encoding: 174.706
+encoding: 174.734
+encoding: 174.224
+encoding: 174.210
+encoding: 174.493
+encoding: 173.773
+encoding: 174.153
+encoding: 174.535
+encoding: 174.621
+encoding: 173.520
+encoding: 174.663
+encoding: 174.464
+encoding: 174.195
+encoding: 174.337
+encoding: 174.564
+encoding: 173.857
+encoding: 174.153
+encoding: 174.834
+encoding: 174.692
+encoding: 174.097
+encoding: 174.734
+encoding: 174.450
+encoding: 173.984
+encoding: 173.984
+encoding: 174.720
+encoding: 173.885
+encoding: 173.773
+encoding: 174.564
+encoding: 174.323
+encoding: 173.576
+encoding: 174.507
+encoding: 174.862
+encoding: 173.787
+encoding: 174.167
+encoding: 174.564
+encoding: 173.843
+encoding: 174.068
+encoding: 174.649
+encoding: 174.125
+encoding: 173.787
+encoding: 174.379
+encoding: 174.422
+encoding: 173.829
+encoding: 174.097
+encoding: 174.734
+encoding: 174.139
+encoding: 174.040
+encoding: 174.677
+encoding: 173.758
+encoding: 174.153
+encoding: 174.649
+encoding: 173.646
+encoding: 173.716
+encoding: 174.210
+encoding: 174.621
+encoding: 173.801
+encoding: 173.956
+encoding: 174.592
+encoding: 173.984
+encoding: 173.716
+encoding: 174.195
+encoding: 174.040
+encoding: 173.984
+encoding: 174.337
+encoding: 174.720
+encoding: 173.885
+encoding: 173.632
+encoding: 174.777
+encoding: 174.012
+encoding: 173.857
+encoding: 174.734
+encoding: 173.913
+encoding: 173.941
+encoding: 173.956
+encoding: 174.153
+encoding: 173.787
+encoding: 173.758
+encoding: 174.422
+encoding: 173.857
+encoding: 173.815
+encoding: 174.394
+encoding: 173.604
+encoding: 173.984
+encoding: 173.871
+encoding: 173.843
+decomp: 0.517
+Cycles (100, 1) completed. Stats:
+	Parameters:
+		Block size: 1310720
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /workspace/data/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 26173
+		Throughput (GB/s): 82.285
+		Compressed size: 763535713
+	Decompression:
+		Duration (us): 4155881
+		Throughput (GB/s): 0.517
+		Ratio: 2.8119
+	Compression phases:
+		Table generation (GB/s, us): 470.515 (4563)
+		Precomputation (GB/s, us): 102236.160 (21)
+		Encoding (GB/s, us): 172.961 (12413)
+		Postprocessing (GB/s, us): 259.201 (8283)

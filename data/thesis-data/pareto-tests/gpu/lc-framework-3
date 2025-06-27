@@ -1,0 +1,60 @@
+TPC-H:
+    1.139, 1.177 => 1.158
+    276.754, 278.057 => 277.4055
+GDelt:
+    1.126
+    57.335
+DBText:
+	1.141,1.184,1.084,1.139,1.145,1.098,1.139 => 1.1329
+	140.445,120.443,64.890,75.069,60.444,78.789,44.142 => 83.4603
+
+
+
+Best Algorithm Found: TUPL3_8 BIT_4 RARE_2
+Compression Ratio: 1.177
+./generate_standalone_GPU_compressor_decompressor.py "" "TUPL3_8 BIT_4 RARE_2"
+nvcc -O3 -arch=sm_80 -fmad=false -Xcompiler "-O3 -march=native -fopenmp -mno-fma -ffp-contract=off" -I. -std=c++17 -o compress compressor-standalone.cu
+
+
+./compress ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt /tmp/lc-out y
+ratio:  87.83%   1.139x
+encoding time: 0.006858 s
+encoding throughput:  276.754 Gbytes/s
+./compress ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt /tmp/lc-out y
+ratio:  84.93%   1.177x
+encoding time: 0.003561 s
+encoding throughput:  278.057 Gbytes/s
+
+./compress ~/thesis-testing/gdelt-locations/locations.txt /tmp/lc-out y
+ratio:  88.82%   1.126x
+encoding time: 0.000029 s
+encoding throughput:   57.335 Gbytes/s
+
+./compress ~/thesis-testing/dbtext/urls /tmp/lc-out y
+ratio:  87.65%   1.141x
+encoding time: 0.000045 s
+encoding throughput:  140.445 Gbytes/s
+./compress ~/thesis-testing/dbtext/uuid /tmp/lc-out y
+ratio:  84.45%   1.184x
+encoding time: 0.000031 s
+encoding throughput:  120.443 Gbytes/s
+./compress ~/thesis-testing/dbtext/yago /tmp/lc-out y
+ratio:  92.25%   1.084x
+encoding time: 0.000030 s
+encoding throughput:   64.890 Gbytes/s
+./compress ~/thesis-testing/dbtext/email /tmp/lc-out y
+ratio:  87.79%   1.139x
+encoding time: 0.000030 s
+encoding throughput:   75.069 Gbytes/s
+./compress ~/thesis-testing/dbtext/urls2 /tmp/lc-out y
+ratio:  87.36%   1.145x
+encoding time: 0.000028 s
+encoding throughput:   60.444 Gbytes/s
+./compress ~/thesis-testing/dbtext/wiki /tmp/lc-out y
+ratio:  91.06%   1.098x
+encoding time: 0.000030 s
+encoding throughput:   78.789 Gbytes/s
+./compress ~/thesis-testing/dbtext/hex /tmp/lc-out y
+ratio:  87.81%   1.139x
+encoding time: 0.000028 s
+encoding throughput:   44.142 Gbytes/s

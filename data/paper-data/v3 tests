@@ -1,0 +1,206 @@
+TPC-H:
+    50.478, 49.399 => 49.9385
+    3.4215, 2.8068 => 3.11415
+GDelt:
+    47.348
+    2.2360
+DBText:
+	46.653, 48.226, 46.095, 47.467, 46.073, 45.953, 46.662 => 46.732714285714
+	2.4398, 2.1013, 1.5503, 2.0347, 2.0749, 1.5823, 1.5071 => 1.8986285714286
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 1897922560
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/customer-2gb/customer-id-2gb-1.txt
+	Compression:
+		Duration (us): 37608
+		Throughput (GB/s): 50.478
+		Compressed size: 554697694
+	Decompression:
+		Duration (us): 905219
+		Throughput (GB/s): 2.097
+		Ratio: 3.4215
+	Compression phases:
+		Table generation (GB/s, us): 1063.262 (1785)
+		Precomputation (GB/s, us): 408.683 (4644)
+		Encoding (GB/s, us): 96.322 (19704)
+		Postprocessing (GB/s, us): 162.521 (11678)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 1979187200
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 40076
+		Throughput (GB/s): 49.399
+		Compressed size: 705141594
+	Decompression:
+		Duration (us): 3920224
+		Throughput (GB/s): 0.505
+		Ratio: 2.8068
+	Compression phases:
+		Table generation (GB/s, us): 837.574 (2363)
+		Precomputation (GB/s, us): 405.654 (4879)
+		Encoding (GB/s, us): 93.362 (21199)
+		Postprocessing (GB/s, us): 161.211 (12277)
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/gdelt-locations/output_locations.txt
+	Compression:
+		Duration (us): 45352
+		Throughput (GB/s): 47.348
+		Compressed size: 960169287
+	Decompression:
+		Duration (us): 3618324
+		Throughput (GB/s): 0.593
+		Ratio: 2.2360
+	Compression phases:
+		Table generation (GB/s, us): 640.501 (3352)
+		Precomputation (GB/s, us): 413.115 (5197)
+		Encoding (GB/s, us): 85.872 (25002)
+		Postprocessing (GB/s, us): 160.532 (13374)
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_urls
+	Compression:
+		Duration (us): 46024
+		Throughput (GB/s): 46.653
+		Compressed size: 879972051
+	Decompression:
+		Duration (us): 2594019
+		Throughput (GB/s): 0.828
+		Ratio: 2.4398
+	Compression phases:
+		Table generation (GB/s, us): 595.385 (3606)
+		Precomputation (GB/s, us): 413.115 (5197)
+		Encoding (GB/s, us): 83.676 (25658)
+		Postprocessing (GB/s, us): 160.329 (13391)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_uuid
+	Compression:
+		Duration (us): 44526
+		Throughput (GB/s): 48.226
+		Compressed size: 1021747523
+	Decompression:
+		Duration (us): 3760935
+		Throughput (GB/s): 0.571
+		Ratio: 2.1013
+	Compression phases:
+		Table generation (GB/s, us): 400.104 (5366)
+		Precomputation (GB/s, us): 412.639 (5203)
+		Encoding (GB/s, us): 90.497 (23724)
+		Postprocessing (GB/s, us): 159.530 (13458)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_yago
+	Compression:
+		Duration (us): 46590
+		Throughput (GB/s): 46.095
+		Compressed size: 1384881320
+	Decompression:
+		Duration (us): 5288891
+		Throughput (GB/s): 0.406
+		Ratio: 1.5503
+	Compression phases:
+		Table generation (GB/s, us): 340.895 (6298)
+		Precomputation (GB/s, us): 412.797 (5201)
+		Encoding (GB/s, us): 86.585 (24796)
+		Postprocessing (GB/s, us): 157.263 (13652)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_email
+	Compression:
+		Duration (us): 45240
+		Throughput (GB/s): 47.467
+		Compressed size: 1055175947
+	Decompression:
+		Duration (us): 4783447
+		Throughput (GB/s): 0.449
+		Ratio: 2.0347
+	Compression phases:
+		Table generation (GB/s, us): 404.629 (5306)
+		Precomputation (GB/s, us): 413.274 (5195)
+		Encoding (GB/s, us): 87.513 (24533)
+		Postprocessing (GB/s, us): 159.471 (13463)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_urls2
+	Compression:
+		Duration (us): 46604
+		Throughput (GB/s): 46.073
+		Compressed size: 1034731399
+	Decompression:
+		Duration (us): 3927950
+		Throughput (GB/s): 0.547
+		Ratio: 2.0749
+	Compression phases:
+		Table generation (GB/s, us): 441.126 (4867)
+		Precomputation (GB/s, us): 412.956 (5199)
+		Encoding (GB/s, us): 82.332 (26077)
+		Postprocessing (GB/s, us): 159.601 (13452)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_wiki
+	Compression:
+		Duration (us): 46733
+		Throughput (GB/s): 45.953
+		Compressed size: 1356836936
+	Decompression:
+		Duration (us): 5231895
+		Throughput (GB/s): 0.410
+		Ratio: 1.5823
+	Compression phases:
+		Table generation (GB/s, us): 355.751 (6035)
+		Precomputation (GB/s, us): 412.956 (5199)
+		Encoding (GB/s, us): 85.109 (25226)
+		Postprocessing (GB/s, us): 157.563 (13626)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: /home/tim/thesis-testing/dbtext-inflated-2gb/output_hex
+	Compression:
+		Duration (us): 46032
+		Throughput (GB/s): 46.662
+		Compressed size: 1424590739
+	Decompression:
+		Duration (us): 4754979
+		Throughput (GB/s): 0.452
+		Ratio: 1.5071
+	Compression phases:
+		Table generation (GB/s, us): 306.533 (7004)
+		Precomputation (GB/s, us): 412.401 (5206)
+		Encoding (GB/s, us): 91.275 (23522)
+		Postprocessing (GB/s, us): 157.356 (13644)
+

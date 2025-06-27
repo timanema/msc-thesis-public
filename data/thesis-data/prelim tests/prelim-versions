@@ -1,0 +1,113 @@
+LIST:
+Cycles (1) completed. Stats:
+	Parameters:
+		Block size: 983040
+		Max ELL width: 5
+		Max hashtable width: 127
+		Input size: 1979842560
+	Table:
+		Size (b): 147456 / 5878
+		Duration (us): 1352 / 1420
+		Throughput (GB/s): 0.679 / 0.647
+		Len-histo (1,2,3+): 36.729 / 77.502 / 116.869
+		Symbols: 231.10
+		Row-length (1, 2): x
+	Compression:
+		Duration (us): 12003991
+		Throughput (GB/s): 0.165
+	Decompression:
+		Duration (us): 4601040
+		Throughput (GB/s): 0.430
+		Ratio: 2.7342
+	Compression phases:
+		Table generation (GB/s, us): 2.186 (905838)
+		Precomputation (GB/s, us): 0.218 (9099507)
+		Encoding (GB/s, us): 0.998 (1983225)
+		Postprocessing (GB/s, us): 0.000 (0)
+
+COUNT:
+Cycles (10) completed. Stats:
+	Parameters:
+		Block size: 5242880
+		Max ELL width: 5
+		Max hashtable width: 127
+		Input size: 1976565760
+	Table:
+		Size (b): 147456 / 5878
+		Duration (us): 1323 / 1388
+		Throughput (GB/s): 3.693 / 3.520
+		Len-histo (1,2,3+): 36.708 / 77.491 / 116.987
+		Symbols: 231.19
+		Row-length (1, 2): x
+	Compression:
+		Duration (us): 772022
+		Throughput (GB/s): 2.561
+	Decompression:
+		Duration (us): 4568977
+		Throughput (GB/s): 0.433
+		Ratio: 2.7613
+	Compression phases:
+		Table generation (GB/s, us): 22.721 (95198)
+		Precomputation (GB/s, us): 4.565 (435506)
+		Encoding (GB/s, us): 8.203 (241084)
+		Postprocessing (GB/s, us): 0.000 (0)
+
+THRUST:
+Input size: 2147483648
+Filtered size: 780146068
+Ratio: 2.75267
+Thrust: 22216us, 96.6902 GB/s
+Thrust (remove_if): 32719.7us, 65.6328 GB/s
+
+
+V0 RTX 4090:
+Cycles (10) completed. Stats:
+	Parameters:
+		Block size: 5242880
+		Max ELL width: 5
+		Max hashtable width: 127
+		Input size: 1976565760
+	Table:
+		Size (b): 147456 / 5878
+		Duration (us): 1070 / 1124
+		Throughput (GB/s): 4.564 / 4.342
+		Len-histo (1,2,3+): 36.740 / 77.477 / 116.780
+		Symbols: 231.00
+		Row-length (1, 2): TODO
+	Compression:
+		Duration (us): 307499
+		Throughput (GB/s): 6.443
+	Decompression:
+		Duration (us): 3895540
+		Throughput (GB/s): 0.508
+		Ratio: 2.7642
+	Compression phases:
+		Table generation (GB/s, us): 52.245 (42444)
+		Precomputation (GB/s, us): 9.257 (215850)
+		Encoding (GB/s, us): 40.354 (49002)
+		Postprocessing (GB/s, us): 0.000 (0)
+Cycles (10) completed. Stats:
+	Parameters:
+		Block size: 5242880
+		Max ELL width: 5
+		Max hashtable width: 127
+		Input size: 1897922560
+	Table:
+		Size (b): 147456 / 5878
+		Duration (us): 722 / 776
+		Throughput (GB/s): 6.760 / 6.290
+		Len-histo (1,2,3+): 20.685 / 56.541 / 121.740
+		Symbols: 198.97
+		Row-length (1, 2): TODO
+	Compression:
+		Duration (us): 221021
+		Throughput (GB/s): 8.595
+	Decompression:
+		Duration (us): 1161342
+		Throughput (GB/s): 1.634
+		Ratio: 2.5831
+	Compression phases:
+		Table generation (GB/s, us): 74.647 (28146)
+		Precomputation (GB/s, us): 13.225 (144162)
+		Encoding (GB/s, us): 39.137 (48502)
+		Postprocessing (GB/s, us): 0.000 (0)

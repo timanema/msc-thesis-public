@@ -1,0 +1,82 @@
+./lzbench -o4p3i3,1 ../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+memcpy,24958.71,25253.94,1898100000,1898100000,100.00,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+fastlz 0.5.0 -1,3410.06,7412.34,1898100000,486925155,25.65,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+fastlz 0.5.0 -2,2606.13,5533.52,1898100000,454745342,23.96,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+kanzi 2.3 -1,439.82,3144.28,1898100000,305478665,16.09,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+kanzi 2.3 -2,432.66,1535.08,1898100000,103274360,5.44,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+kanzi 2.3 -3,273.22,1516.04,1898100000,103283305,5.44,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+kanzi 2.3 -4,157.31,786.37,1898100000,221579581,11.67,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lizard 2.1 -10,1793.93,4583.52,1898100000,418201642,22.03,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lizard 2.1 -11,2336.95,5005.95,1898100000,409541187,21.58,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lizard 2.1 -12,747.75,4657.29,1898100000,401084002,21.13,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lizard 2.1 -13,364.75,4484.11,1898100000,401081950,21.13,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lizard 2.1 -14,256.75,4134.81,1898100000,401081950,21.13,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lz4 1.10.0,1527.61,10884.51,1898100000,417751833,22.01,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lz4fast 1.10.0 -3,1518.82,10936.46,1898100000,420151008,22.14,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lz4fast 1.10.0 -17,1497.09,9630.79,1898100000,493782124,26.01,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzav 4.5 -1,855.83,4812.01,1898100000,505691832,26.64,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzav 4.5 -2,291.11,7374.72,1898100000,497900995,26.23,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzf 3.6 -0,3234.10,3751.43,1898100000,491213202,25.88,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzf 3.6 -1,3480.53,4100.42,1898100000,486866154,25.65,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzfse 2017-03-08,364.29,3160.98,1898100000,74477524,3.92,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzo1b 2.10 -1,1285.42,3661.62,1898100000,442208402,23.30,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzo1c 2.10 -1,2412.01,7568.20,1898100000,409097809,21.55,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzof 2.10 -1,2543.42,7594.79,1898100000,409160538,21.56,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzo1x 2.10 -1,2797.72,7558.49,1898100000,454534591,23.95,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzo1y 2.10 -1,2858.97,7865.25,1898100000,454521722,23.95,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzsse4fast 2019-04-18,1261.61,9002.90,1898100000,441605903,23.27,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzsse8fast 2019-04-18,1343.99,7965.90,1898100000,441633291,23.27,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+lzvn 2017-03-08,417.89,6702.89,1898100000,299826865,15.80,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+quicklz 1.5.0 -1,3260.01,2364.79,1898100000,374907307,19.75,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+quicklz 1.5.0 -2,914.21,1785.71,1898100000,403672691,21.27,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+snappy 1.2.1,2896.22,4324.28,1898100000,492864462,25.97,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+tornado 0.6a -1,1679.02,2160.67,1898100000,396512707,20.89,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+tornado 0.6a -2,1303.71,1818.30,1898100000,394772956,20.80,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+tornado 0.6a -3,1004.61,1610.67,1898100000,195346369,10.29,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+zstd 1.5.6 -1,1475.97,3368.34,1898100000,52433607,2.76,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+zstd 1.5.6 -2,1199.24,2386.81,1898100000,44712535,2.36,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+zstd 1.5.6 -3,1197.02,2555.33,1898100000,37922404,2.00,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+zstd 1.5.6 -4,1083.60,2850.13,1898100000,37669816,1.98,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+zstd 1.5.6 -5,1125.66,2792.96,1898100000,37049559,1.95,../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+
+./lzbench -o4p3i3,1 ../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,22750.87,24549.31,1979644096,1979644096,100.00,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+fastlz 0.5.0 -1,530.02,847.62,1979644096,846425103,42.76,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+fastlz 0.5.0 -2,516.43,875.88,1979644096,837699513,42.32,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+kanzi 2.3 -1,234.21,1729.01,1979644096,580155194,29.31,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+kanzi 2.3 -2,242.80,946.41,1979644096,511664030,25.85,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+kanzi 2.3 -3,220.13,494.98,1979644096,463181533,23.40,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+kanzi 2.3 -4,140.18,230.20,1979644096,323381143,16.34,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lizard 2.1 -10,581.84,2343.81,1979644096,844584131,42.66,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lizard 2.1 -11,545.55,2241.96,1979644096,812753230,41.06,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lizard 2.1 -12,257.61,2961.77,1979644096,713100485,36.02,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lizard 2.1 -13,153.94,3099.01,1979644096,665351721,33.61,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lizard 2.1 -14,119.76,2762.41,1979644096,630312914,31.84,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lz4 1.10.0,714.47,6038.43,1979644096,844219535,42.65,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lz4fast 1.10.0 -3,714.62,5838.67,1979644096,868219965,43.86,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lz4fast 1.10.0 -17,857.17,4797.08,1979644096,1122336278,56.69,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzav 4.5 -1,526.91,3689.27,1979644096,689442230,34.83,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzav 4.5 -2,147.83,5148.56,1979644096,585559692,29.58,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzf 3.6 -0,538.24,740.88,1979644096,865903881,43.74,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzf 3.6 -1,488.25,645.30,1979644096,829136459,41.88,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzfse 2017-03-08,136.34,957.71,1979644096,529849487,26.76,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzo1b 2.10 -1,415.63,730.37,1979644096,778974535,39.35,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzo1c 2.10 -1,407.94,698.96,1979644096,799833959,40.40,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzof 2.10 -1,370.44,649.55,1979644096,826567495,41.75,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzo1x 2.10 -1,645.34,556.37,1979644096,828592716,41.86,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzo1y 2.10 -1,654.68,605.61,1979644096,834574649,42.16,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzsse4fast 2019-04-18,436.44,8522.38,1979644096,747910870,37.78,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzsse8fast 2019-04-18,440.63,8170.94,1979644096,759847633,38.38,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+lzvn 2017-03-08,88.32,928.46,1979644096,647834065,32.72,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+quicklz 1.5.0 -1,535.50,822.58,1979644096,776229337,39.21,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+quicklz 1.5.0 -2,278.59,919.23,1979644096,665540343,33.62,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+snappy 1.2.1,377.54,1705.01,1979644096,799421677,40.38,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+tornado 0.6a -1,364.71,440.99,1979644096,820023625,41.42,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+tornado 0.6a -2,325.67,482.13,1979644096,737737520,37.27,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+tornado 0.6a -3,249.52,398.44,1979644096,577841232,29.19,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+zstd 1.5.6 -1,443.80,2148.86,1979644096,557800057,28.18,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+zstd 1.5.6 -2,444.53,1883.23,1979644096,560498028,28.31,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+zstd 1.5.6 -3,377.02,2020.85,1979644096,523710940,26.45,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+zstd 1.5.6 -4,361.52,1966.17,1979644096,521152268,26.33,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+zstd 1.5.6 -5,165.11,1946.61,1979644096,505840080,25.55,../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt

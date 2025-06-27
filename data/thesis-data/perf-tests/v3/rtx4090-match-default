@@ -1,0 +1,222 @@
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 1979187200
+		Effective table size: 62914560
+		File name: ../../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 44293
+		Throughput (GB/s): 44.822
+		Compressed size: 705094359
+	Decompression:
+		Duration (us): 4353871
+		Throughput (GB/s): 0.455
+		Ratio: 2.8070
+	Compression phases:
+		Table generation (GB/s, us): 669.096 (2958)
+		Precomputation (GB/s, us): 395.521 (5004)
+		Encoding (GB/s, us): 178.337 (11098)
+		Postprocessing (GB/s, us): 75.280 (26291)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 1897922560
+		Effective table size: 62914560
+		File name: ../../thesis-testing/customer-2gb/customer-id-2gb-1.txt
+	Compression:
+		Duration (us): 41781
+		Throughput (GB/s): 45.533
+		Compressed size: 550132901
+	Decompression:
+		Duration (us): 995480
+		Throughput (GB/s): 1.907
+		Ratio: 3.4499
+	Compression phases:
+		Table generation (GB/s, us): 924.914 (2052)
+		Precomputation (GB/s, us): 402.017 (4721)
+		Encoding (GB/s, us): 182.265 (10413)
+		Postprocessing (GB/s, us): 76.579 (24784)
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/gdelt-locations-inflated-2gb/output_locations.txt
+	Compression:
+		Duration (us): 50064
+		Throughput (GB/s): 42.981
+		Compressed size: 958795302
+	Decompression:
+		Duration (us): 3573367
+		Throughput (GB/s): 0.601
+		Ratio: 2.2392
+	Compression phases:
+		Table generation (GB/s, us): 594.890 (3609)
+		Precomputation (GB/s, us): 405.163 (5299)
+		Encoding (GB/s, us): 149.687 (14343)
+		Postprocessing (GB/s, us): 75.618 (28392)
+
+
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/dbtext-inflated-2gb/output_hex
+	Compression:
+		Duration (us): 48683
+		Throughput (GB/s): 44.115
+		Compressed size: 1424590739
+	Decompression:
+		Duration (us): 5034184
+		Throughput (GB/s): 0.426
+		Ratio: 1.5071
+	Compression phases:
+		Table generation (GB/s, us): 301.201 (7128)
+		Precomputation (GB/s, us): 413.593 (5191)
+		Encoding (GB/s, us): 178.141 (12052)
+		Postprocessing (GB/s, us): 77.780 (27603)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/dbtext-inflated-2gb/output_wiki
+	Compression:
+		Duration (us): 50176
+		Throughput (GB/s): 42.813
+		Compressed size: 1356836936
+	Decompression:
+		Duration (us): 5216689
+		Throughput (GB/s): 0.412
+		Ratio: 1.5823
+	Compression phases:
+		Table generation (GB/s, us): 352.770 (6086)
+		Precomputation (GB/s, us): 413.036 (5198)
+		Encoding (GB/s, us): 149.406 (14370)
+		Postprocessing (GB/s, us): 77.190 (27814)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/dbtext-inflated-2gb/output_urls2
+	Compression:
+		Duration (us): 51532
+		Throughput (GB/s): 41.751
+		Compressed size: 1034731399
+	Decompression:
+		Duration (us): 3930648
+		Throughput (GB/s): 0.546
+		Ratio: 2.0749
+	Compression phases:
+		Table generation (GB/s, us): 445.890 (4815)
+		Precomputation (GB/s, us): 404.476 (5308)
+		Encoding (GB/s, us): 135.798 (15810)
+		Postprocessing (GB/s, us): 75.515 (28431)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/dbtext-inflated-2gb/output_email
+	Compression:
+		Duration (us): 49062
+		Throughput (GB/s): 43.811
+		Compressed size: 1055175947
+	Decompression:
+		Duration (us): 4656891
+		Throughput (GB/s): 0.461
+		Ratio: 2.0347
+	Compression phases:
+		Table generation (GB/s, us): 387.049 (5547)
+		Precomputation (GB/s, us): 410.038 (5236)
+		Encoding (GB/s, us): 157.506 (13631)
+		Postprocessing (GB/s, us): 77.104 (27845)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/dbtext-inflated-2gb/output_yago
+	Compression:
+		Duration (us): 49514
+		Throughput (GB/s): 43.372
+		Compressed size: 1384881320
+	Decompression:
+		Duration (us): 5491236
+		Throughput (GB/s): 0.391
+		Ratio: 1.5503
+	Compression phases:
+		Table generation (GB/s, us): 343.404 (6252)
+		Precomputation (GB/s, us): 412.877 (5200)
+		Encoding (GB/s, us): 155.825 (13778)
+		Postprocessing (GB/s, us): 77.760 (27610)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/dbtext-inflated-2gb/output_uuid
+	Compression:
+		Duration (us): 47046
+		Throughput (GB/s): 45.642
+		Compressed size: 1021747523
+	Decompression:
+		Duration (us): 3842922
+		Throughput (GB/s): 0.559
+		Ratio: 2.1013
+	Compression phases:
+		Table generation (GB/s, us): 413.354 (5194)
+		Precomputation (GB/s, us): 413.354 (5194)
+		Encoding (GB/s, us): 173.086 (12404)
+		Postprocessing (GB/s, us): 78.319 (27413)
+Cycles (250) completed. Stats:
+	Parameters:
+		Block size: 655360
+		Input size: 2146959360
+		Effective table size: 62914560
+		File name: ../../thesis-testing/dbtext-inflated-2gb/output_urls
+	Compression:
+		Duration (us): 49257
+		Throughput (GB/s): 43.591
+		Compressed size: 879996048
+	Decompression:
+		Duration (us): 2644373
+		Throughput (GB/s): 0.812
+		Ratio: 2.4397
+	Compression phases:
+		Table generation (GB/s, us): 578.695 (3710)
+		Precomputation (GB/s, us): 413.354 (5194)
+		Encoding (GB/s, us): 143.995 (14910)
+		Postprocessing (GB/s, us): 78.471 (27360)
+
+2.8070,
+3.4499,
+2.2392,
+1.5071,
+1.5823,
+2.0749,
+2.0347,
+1.5503,
+2.1013,
+2.4397,
+TPC-H:  3.1284 -00.24%
+GDelt:  2.2392 -00.69%
+DBtext: 1.8986 +00.08%
+
+44.822,
+45.533,
+42.981,
+44.115,
+42.813,
+41.751,
+43.811,
+43.372,
+45.642,
+43.591,
+TPC-H:  45.1775 +53.03%
+GDelt:  42.9810 +43.36%
+DBtext: 43.5850 +46.71%

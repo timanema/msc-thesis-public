@@ -1,0 +1,85 @@
+TPC-H:
+    29.6073, 3.4019 => 16.5046
+    17.8825, 5.0872 => 11.4849
+GDelt:
+    6.5108
+    9.6851
+DBText:
+	3.7799, 2.4834, 1.7941, 2.2623, 2.4384, 1.8584, 1.8690 => 2.3550
+	6.0671, 4.5752, 3.0781, 4.1300, 4.6264, 3.2548, 3.0812 => 4.1161
+
+
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 1898100000
+comp_size: 64109254, compressed ratio: 29.6073
+compression throughput (GB/s): 17.8825
+decompression throughput (GB/s): 78.1948
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 1979644096
+comp_size: 581926911, compressed ratio: 3.4019
+compression throughput (GB/s): 5.0872
+decompression throughput (GB/s): 65.0689
+
+
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/gdelt-locations/output_locations.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 329834875, compressed ratio: 6.5108
+compression throughput (GB/s): 9.6851
+decompression throughput (GB/s): 93.2337
+
+
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/dbtext-inflated-2gb/output_urls
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 568131666, compressed ratio: 3.7799
+compression throughput (GB/s): 6.0671
+decompression throughput (GB/s): 74.7988
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/dbtext-inflated-2gb/output_uuid
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 864722798, compressed ratio: 2.4834
+compression throughput (GB/s): 4.5752
+decompression throughput (GB/s): 57.6609
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/dbtext-inflated-2gb/output_yago
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1196989576, compressed ratio: 1.7941
+compression throughput (GB/s): 3.0781
+decompression throughput (GB/s): 50.0608
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/dbtext-inflated-2gb/output_email
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 949260769, compressed ratio: 2.2623
+compression throughput (GB/s): 4.1300
+decompression throughput (GB/s): 58.0651
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/dbtext-inflated-2gb/output_urls2
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 880696981, compressed ratio: 2.4384
+compression throughput (GB/s): 4.6264
+decompression throughput (GB/s): 61.5426
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/dbtext-inflated-2gb/output_wiki
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1155559227, compressed ratio: 1.8584
+compression throughput (GB/s): 3.2548
+decompression throughput (GB/s): 53.3475
+./benchmark_zstd_chunked -i 50 -f ~/thesis-testing/dbtext-inflated-2gb/output_hex
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1149024155, compressed ratio: 1.8690
+compression throughput (GB/s): 3.0812
+decompression throughput (GB/s): 50.6601

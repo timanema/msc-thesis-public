@@ -1,0 +1,41 @@
+./lzbench -o4p3i3,1 ../thesis-testing/gdelt-locations/output_locations.txt
+Compressor name,Compression speed,Decompression speed,Original size,Compressed size,Ratio,Filename
+memcpy,24246.74,25060.93,2147483648,2147483648,100.00,../thesis-testing/gdelt-locations/output_locations.txt
+fastlz 0.5.0 -1,803.69,1445.16,2147483648,550001402,25.61,../thesis-testing/gdelt-locations/output_locations.txt
+fastlz 0.5.0 -2,848.28,1719.71,2147483648,440927911,20.53,../thesis-testing/gdelt-locations/output_locations.txt
+kanzi 2.3 -1,336.91,2692.67,2147483648,121594754,5.66,../thesis-testing/gdelt-locations/output_locations.txt
+kanzi 2.3 -2,336.22,2064.84,2147483648,98173871,4.57,../thesis-testing/gdelt-locations/output_locations.txt
+kanzi 2.3 -3,229.45,695.84,2147483648,115600416,5.38,../thesis-testing/gdelt-locations/output_locations.txt
+kanzi 2.3 -4,183.06,606.67,2147483648,100314103,4.67,../thesis-testing/gdelt-locations/output_locations.txt
+lizard 2.1 -10,1315.10,3437.95,2147483648,435609509,20.28,../thesis-testing/gdelt-locations/output_locations.txt
+lizard 2.1 -11,1307.68,3340.85,2147483648,427307438,19.90,../thesis-testing/gdelt-locations/output_locations.txt
+lizard 2.1 -12,453.31,3278.67,2147483648,365590983,17.02,../thesis-testing/gdelt-locations/output_locations.txt
+lizard 2.1 -13,281.26,3003.99,2147483648,349511133,16.28,../thesis-testing/gdelt-locations/output_locations.txt
+lizard 2.1 -14,219.76,2678.61,2147483648,340595239,15.86,../thesis-testing/gdelt-locations/output_locations.txt
+lz4 1.10.0,1171.81,4071.76,2147483648,432701153,20.15,../thesis-testing/gdelt-locations/output_locations.txt
+lz4fast 1.10.0 -3,1307.02,4483.65,2147483648,457985793,21.33,../thesis-testing/gdelt-locations/output_locations.txt
+lz4fast 1.10.0 -17,1504.03,5213.21,2147483648,678339525,31.59,../thesis-testing/gdelt-locations/output_locations.txt
+lzav 4.5 -1,2400.50,10656.00,2147483648,135392515,6.30,../thesis-testing/gdelt-locations/output_locations.txt
+lzav 4.5 -2,563.75,14372.74,2147483648,71104439,3.31,../thesis-testing/gdelt-locations/output_locations.txt
+lzf 3.6 -0,714.99,1217.54,2147483648,560000847,26.08,../thesis-testing/gdelt-locations/output_locations.txt
+lzf 3.6 -1,774.46,1192.59,2147483648,544333962,25.35,../thesis-testing/gdelt-locations/output_locations.txt
+lzfse 2017-03-08,226.06,1662.15,2147483648,238644699,11.11,../thesis-testing/gdelt-locations/output_locations.txt
+lzo1b 2.10 -1,818.68,1461.15,2147483648,410213361,19.10,../thesis-testing/gdelt-locations/output_locations.txt
+lzo1c 2.10 -1,743.30,1321.50,2147483648,498884755,23.23,../thesis-testing/gdelt-locations/output_locations.txt
+lzof 2.10 -1,668.53,1404.79,2147483648,508894496,23.70,../thesis-testing/gdelt-locations/output_locations.txt
+lzo1x 2.10 -1,1199.39,1333.62,2147483648,496452014,23.12,../thesis-testing/gdelt-locations/output_locations.txt
+lzo1y 2.10 -1,1243.79,1197.21,2147483648,493844249,23.00,../thesis-testing/gdelt-locations/output_locations.txt
+lzsse4fast 2019-04-18,634.47,7823.45,2147483648,388878437,18.11,../thesis-testing/gdelt-locations/output_locations.txt
+lzsse8fast 2019-04-18,605.11,7278.20,2147483648,409390477,19.06,../thesis-testing/gdelt-locations/output_locations.txt
+lzvn 2017-03-08,168.54,1549.15,2147483648,360308179,16.78,../thesis-testing/gdelt-locations/output_locations.txt
+quicklz 1.5.0 -1,1124.82,1639.57,2147483648,347596485,16.19,../thesis-testing/gdelt-locations/output_locations.txt
+quicklz 1.5.0 -2,705.45,2010.31,2147483648,265629241,12.37,../thesis-testing/gdelt-locations/output_locations.txt
+snappy 1.2.1,820.20,2992.92,2147483648,455467475,21.21,../thesis-testing/gdelt-locations/output_locations.txt
+tornado 0.6a -1,899.39,1057.06,2147483648,388349712,18.08,../thesis-testing/gdelt-locations/output_locations.txt
+tornado 0.6a -2,906.33,1131.50,2147483648,261009962,12.15,../thesis-testing/gdelt-locations/output_locations.txt
+tornado 0.6a -3,1364.82,1867.44,2147483648,103978658,4.84,../thesis-testing/gdelt-locations/output_locations.txt
+zstd 1.5.6 -1,943.90,2767.85,2147483648,244744482,11.40,../thesis-testing/gdelt-locations/output_locations.txt
+zstd 1.5.6 -2,938.94,2596.47,2147483648,239565371,11.16,../thesis-testing/gdelt-locations/output_locations.txt
+zstd 1.5.6 -3,14730.98,23147.00,2147483648,571228,0.03,../thesis-testing/gdelt-locations/output_locations.txt
+zstd 1.5.6 -4,14667.75,22989.00,2147483648,571776,0.03,../thesis-testing/gdelt-locations/output_locations.txt
+zstd 1.5.6 -5,14145.14,23053.65,2147483648,542284,0.03,../thesis-testing/gdelt-locations/output_locations.txt

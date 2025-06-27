@@ -1,0 +1,80 @@
+Strict output checking is disabled, decompressed data might not match original data!
+encoding: 46.551
+encoding: 68.835
+encoding: 68.661
+encoding: 69.760
+encoding: 64.025
+encoding: 63.969
+encoding: 68.876
+encoding: 67.225
+encoding: 65.819
+encoding: 68.346
+encoding: 66.614
+encoding: 69.698
+encoding: 65.907
+encoding: 67.516
+encoding: 60.976
+encoding: 60.146
+encoding: 66.807
+encoding: 68.566
+encoding: 69.020
+encoding: 68.464
+encoding: 68.256
+encoding: 64.838
+encoding: 69.463
+encoding: 69.254
+encoding: 69.288
+encoding: 66.695
+encoding: 66.275
+encoding: 64.112
+encoding: 65.723
+encoding: 66.003
+encoding: 65.499
+encoding: 68.433
+encoding: 69.018
+encoding: 67.694
+encoding: 68.440
+encoding: 67.980
+encoding: 67.470
+encoding: 67.186
+encoding: 67.784
+encoding: 67.507
+encoding: 62.848
+encoding: 64.791
+encoding: 69.167
+encoding: 64.917
+encoding: 64.770
+encoding: 69.240
+encoding: 67.634
+encoding: 67.353
+encoding: 68.462
+encoding: 66.628
+decomp: 0.742
+decomp: 0.746
+decomp: 0.740
+decomp: 0.743
+decomp: 0.737
+decomp: 0.743
+decomp: 0.744
+decomp: 0.696
+decomp: 0.745
+decomp: 0.736
+Cycles (50, 10) completed. Stats:
+	Parameters:
+		Block size: 40960
+		Input size: 1979637760
+		Effective table size: 62914560
+		File name: ../../thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+	Compression:
+		Duration (us): 119567
+		Throughput (GB/s): 16.797
+		Compressed size: 713631931
+	Decompression:
+		Duration (us): 2686628
+		Throughput (GB/s): 0.737
+		Ratio: 2.7740
+	Compression phases:
+		Table generation (GB/s, us): 770.287 (2570)
+		Precomputation (GB/s, us): 73319.917 (27)
+		Encoding (GB/s, us): 66.326 (29847)
+		Postprocessing (GB/s, us): 23.122 (85618)

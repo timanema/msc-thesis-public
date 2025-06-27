@@ -1,0 +1,84 @@
+TPC-H:
+    442.6491, 449.7947 => 446.2219
+    1.1397, 1.1766 => 1.15815
+GDelt:
+    442.2421
+    1.1359
+DBText:
+	454.9612, 454.6127, 439.7992, 442.2212, 452.1347, 442.1853, 442.8912 => 446.97221428571
+	1.2025, 1.1997, 1.1248, 1.1392, 1.1884, 1.1377, 1.1397 => 1.1617142857143
+
+
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/customer-2gb/customer-id-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 1898100000
+comp_size: 1665473100, compressed ratio: 1.1397
+compression throughput (GB/s): 442.6491
+decompression throughput (GB/s): 421.3913
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/lineitem-2gb/lineitem-comments-2gb-1.txt
+----------
+files: 1
+uncompressed (B): 1979644096
+comp_size: 1682473236, compressed ratio: 1.1766
+compression throughput (GB/s): 449.7947
+decompression throughput (GB/s): 419.2024
+
+
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/gdelt-locations/output_locations.txt
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1890637724, compressed ratio: 1.1359
+compression throughput (GB/s): 442.2421
+decompression throughput (GB/s): 426.1488
+
+
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_urls
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1785829156, compressed ratio: 1.2025
+compression throughput (GB/s): 454.9612
+decompression throughput (GB/s): 444.5521
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_uuid
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1790031364, compressed ratio: 1.1997
+compression throughput (GB/s): 454.6127
+decompression throughput (GB/s): 428.8850
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_yago
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1909214944, compressed ratio: 1.1248
+compression throughput (GB/s): 439.7992
+decompression throughput (GB/s): 396.1764
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_email
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1885095036, compressed ratio: 1.1392
+compression throughput (GB/s): 442.2212
+decompression throughput (GB/s): 416.2162
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_urls2
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1807061948, compressed ratio: 1.1884
+compression throughput (GB/s): 452.1347
+decompression throughput (GB/s): 421.8100
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_wiki
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1887638744, compressed ratio: 1.1377
+compression throughput (GB/s): 442.1853
+decompression throughput (GB/s): 424.3478
+./benchmark_bitcomp_chunked -i 250 -f ~/thesis-testing/dbtext-inflated-2gb/output_hex
+----------
+files: 1
+uncompressed (B): 2147483648
+comp_size: 1884299984, compressed ratio: 1.1397
+compression throughput (GB/s): 442.8912
+decompression throughput (GB/s): 422.4255
