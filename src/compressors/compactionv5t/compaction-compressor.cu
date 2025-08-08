@@ -44,8 +44,8 @@ namespace gtsst::compressors {
             return gtsstErrorBadBlockSize;
         }
 
-        if ((uintptr_t)src % compactionv5t::WORD_ALIGNMENT != 0 || (uintptr_t)dst % compactionv5t::WORD_ALIGNMENT != 0
-            ||
+        if ((uintptr_t)src % compactionv5t::WORD_ALIGNMENT != 0 ||
+            (uintptr_t)dst % compactionv5t::WORD_ALIGNMENT != 0 ||
             (uintptr_t)tmp % compactionv5t::TMP_WORD_ALIGNMENT != 0) {
             return gtsstErrorBadAlignment;
         }
@@ -78,10 +78,10 @@ namespace gtsst::compressors {
         const uint64_t number_of_blocks = config.input_buffer_size / compactionv5t::BLOCK_SIZE;
         const uint64_t number_of_tables = (number_of_blocks - 1) / compactionv5t::SUPER_BLOCK_SIZE + 1;
         const uint64_t metadata_mem_size = sizeof(compactionv5t::GCompactionMetadata) * number_of_tables;
-        const uint64_t block_headers_mem_size = sizeof(CompactionV5TBlockHeader) *
-            number_of_blocks;
-        const uint64_t approx_header_mem_size = sizeof(CompactionV5TFileHeader) + number_of_tables * sizeof(GBaseHeader)
-            + block_headers_mem_size;
+        const uint64_t block_headers_mem_size = sizeof(CompactionV5TBlockHeader) * number_of_blocks;
+        const uint64_t approx_header_mem_size =
+            sizeof(CompactionV5TFileHeader) + number_of_tables * sizeof(GBaseHeader) + block_headers_mem_size;
+        const uint64_t sample_data_mem_size = number_of_tables * FSST_SAMPLEMAXSZ;
 
         // Update the device queue for internal transpose launches
         cudaDeviceSetLimit(cudaLimitDevRuntimePendingLaunchCount, compactionv5t::CUDA_QUEUE_LEN);
@@ -94,29 +94,40 @@ namespace gtsst::compressors {
         compactionv5t::GCompactionMetadata* metadata_host;
         GBaseHeader* table_headers_host;
         CompactionV5TBlockHeader* block_headers_host;
+        uint8_t* sample_data_host;
         safeCUDACall(cudaMallocHost(&metadata_host, metadata_mem_size));
         safeCUDACall(cudaMallocHost(&table_headers_host, sizeof(GBaseHeader) * number_of_tables));
         safeCUDACall(cudaMallocHost(&block_headers_host, block_headers_mem_size));
+        safeCUDACall(cudaMallocHost(&sample_data_host, sample_data_mem_size));
 
         // Some CUDA bookkeeping
         compactionv5t::GCompactionMetadata* metadata_gpu;
         CompactionV5TBlockHeader* block_headers_gpu;
         uint8_t* header_gpu;
+        uint8_t* sample_data_gpu;
 
         // Allocate some CUDA buffers
         safeCUDACall(cudaMalloc(&metadata_gpu, metadata_mem_size));
         safeCUDACall(cudaMalloc(&block_headers_gpu, block_headers_mem_size));
         safeCUDACall(cudaMalloc(&header_gpu, approx_header_mem_size));
+        safeCUDACall(cudaMalloc(&sample_data_gpu, sample_data_mem_size));
 
         // Phase 1: Symbol generation (CPU for now)
         const auto symbol_start = std::chrono::high_resolution_clock::now();
 
+        // Sample data and copy it to the CPU
+        gpu_sampling<<<number_of_tables, FSST_SAMPLELINE / 4>>>(
+            src, sample_data_gpu, compactionv5t::BLOCK_SIZE * compactionv5t::SUPER_BLOCK_SIZE,
+            config.input_buffer_size);
+        safeCUDACall(cudaMemcpy(sample_data_host, sample_data_gpu, sample_data_mem_size, cudaMemcpyDeviceToHost));
+        safeCUDACall(cudaDeviceSynchronize());
+
+        // Then generate tables using the sampled data
         std::vector<std::thread> threads;
         threads.reserve(number_of_tables);
         for (uint32_t i = 0; i < number_of_tables; i++) {
-            threads.emplace_back(gpu_create_metadata<symbols::SmallSymbolMatchTableData>, i,
-                                 compactionv5t::BLOCK_SIZE * compactionv5t::SUPER_BLOCK_SIZE, metadata_host,
-                                 table_headers_host, sample_src, config.input_buffer_size);
+            threads.emplace_back(gpu_create_metadata_with_samples<symbols::SmallSymbolMatchTableData>, i, metadata_host,
+                                 table_headers_host, sample_data_host);
         }
         for (std::thread& t : threads) {
             t.join();
@@ -167,7 +178,7 @@ namespace gtsst::compressors {
         // Copy tables
         for (int table_id = 0; table_id < number_of_tables; table_id++) {
             safeCUDACall(cudaMemcpyAsync(header_gpu + header_size, &table_headers_host[table_id],
-                metadata_host[table_id].header_offset, cudaMemcpyHostToDevice));
+                                         metadata_host[table_id].header_offset, cudaMemcpyHostToDevice));
 
             header_size += metadata_host[table_id].header_offset;
             file_header.table_size += metadata_host[table_id].header_offset;
@@ -181,9 +192,8 @@ namespace gtsst::compressors {
         // free(x);
 
         // Copy block headers
-        safeCUDACall(
-            cudaMemcpyAsync(header_gpu + header_size, block_headers_host, block_headers_mem_size, cudaMemcpyHostToDevice
-            ));
+        safeCUDACall(cudaMemcpyAsync(header_gpu + header_size, block_headers_host, block_headers_mem_size,
+                                     cudaMemcpyHostToDevice));
         header_size += block_headers_mem_size;
 
         // Copy file header
@@ -196,18 +206,16 @@ namespace gtsst::compressors {
         for (uint32_t block_id = 0; block_id < number_of_blocks; block_id++) {
             uint8_t* running_dst = tmp + running_length;
             size_t block_size = block_headers_host[block_id].flushes * compactionv5t::THREAD_COUNT * sizeof(uint32_t);
-            safeCUDACall(
-                cudaMemcpyAsync(running_dst, dst + compactionv5t::TMP_OUT_BLOCK_SIZE * block_id, block_size,
-                    cudaMemcpyDeviceToDevice));
+            safeCUDACall(cudaMemcpyAsync(running_dst, dst + compactionv5t::TMP_OUT_BLOCK_SIZE * block_id, block_size,
+                                         cudaMemcpyDeviceToDevice));
             running_length += block_size;
         }
 
         // Then do stream compaction on the actual data
         const thrust::device_ptr<uint8_t> thrust_gpu_in = thrust::device_pointer_cast(tmp);
         const thrust::device_ptr<uint8_t> thrust_gpu_out = thrust::device_pointer_cast(dst + header_size);
-        const thrust::device_ptr<uint8_t> thrust_new_end = copy_if(thrust::device, thrust_gpu_in,
-                                                                   thrust_gpu_in + running_length, thrust_gpu_out,
-                                                                   is_not_ignore());
+        const thrust::device_ptr<uint8_t> thrust_new_end =
+            copy_if(thrust::device, thrust_gpu_in, thrust_gpu_in + running_length, thrust_gpu_out, is_not_ignore());
         const size_t thrust_out_size = thrust_new_end - thrust_gpu_out;
         const size_t out = thrust_out_size + header_size;
 
@@ -218,17 +226,18 @@ namespace gtsst::compressors {
         safeCUDACall(cudaFreeHost(metadata_host));
         safeCUDACall(cudaFreeHost(table_headers_host));
         safeCUDACall(cudaFreeHost(block_headers_host));
+        safeCUDACall(cudaFreeHost(sample_data_host));
 
         // And free cuda buffers
         safeCUDACall(cudaFree(metadata_gpu));
         safeCUDACall(cudaFree(block_headers_gpu));
         safeCUDACall(cudaFree(header_gpu));
+        safeCUDACall(cudaFree(sample_data_gpu));
 
         // Check and update output size
-        assert(
-            file_header.compressed_size - sizeof(CompactionV5TFileHeader) - file_header.table_size -
-            block_headers_mem_size ==
-            total_data_size);
+        assert(file_header.compressed_size - sizeof(CompactionV5TFileHeader) - file_header.table_size -
+                   block_headers_mem_size ==
+               total_data_size);
         assert(thrust_out_size == total_data_size);
         *out_size = out;
 

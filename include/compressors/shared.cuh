@@ -80,11 +80,62 @@ namespace gtsst::compressors {
         delete enc_table;
     }
 
+    /*
+     * Uses samples generated on the GPU. Using this (in combination with gpu_sampling) has a small negative impact on
+     * throughput (~-0.05%), but actually makes the result more valid: the CPU no longer needs to have the dataset in
+     * system memory.
+     */
+    template <typename Encoding>
+        requires std::constructible_from<Encoding, fsst::SymbolTable&>
+    void gpu_create_metadata_with_samples(uint32_t block_id, Metadata<Encoding>* metadata, GBaseHeader* headers,
+                                          const uint8_t* sample_bufs) {
+        Metadata<Encoding>& m = metadata[block_id];
+        const uint8_t* sample_src = sample_bufs + FSST_SAMPLEMAXSZ * block_id;
+
+        // Read data sample
+        auto* sample_buf = new uint8_t[FSST_SAMPLEMAXSZ];
+        constexpr size_t sample_len = FSST_SAMPLETARGET;
+        memcpy(sample_buf, sample_src, sample_len);
+
+        // Create symbol table
+        const auto enc_table = fsst::build_symbol_table<Encoding>(sample_buf, sample_len);
+        m.symbol_table = enc_table->encoding_data;
+
+        // Export symbol table
+        const size_t stLen = enc_table->export_table(headers[block_id].decoding_table);
+        m.header_offset = stLen;
+
+        delete[] sample_buf;
+        delete enc_table;
+    }
+
+    __global__ inline void gpu_sampling(const uint8_t* src, uint8_t* sample_bufs, const size_t block_size,
+                                        const size_t len) {
+        assert(block_size % 4 == 0);
+        assert(FSST_SAMPLEMAXSZ % 4 == 0);
+        assert((uintptr_t)src % 4 == 0); // Ensure 4-byte alignment of source
+        assert((uintptr_t)sample_bufs % 4 == 0); // Ensure 4-byte alignment of source
+
+        const uint32_t* sample_src = (uint32_t*)src + (block_size / 4) * blockIdx.x;
+        uint32_t* sample_buf = (uint32_t*)sample_bufs + (FSST_SAMPLEMAXSZ / 4) * blockIdx.x;
+        size_t sampleRnd = FSST_HASH(4637947);
+        const size_t block_len = min(block_size, len - blockIdx.x * block_size) / 4 * 4;
+        const size_t chunks = 1 + (block_len - 1) / FSST_SAMPLELINE;
+
+        for (int i = 0; i < FSST_SAMPLETARGET / FSST_SAMPLELINE; i++) {
+            // Choose a random chunk of data
+            sampleRnd = FSST_HASH(sampleRnd);
+            const size_t chunk = sampleRnd % chunks;
+
+            sample_buf[i * blockDim.x + threadIdx.x] = sample_src[chunk * FSST_SAMPLELINE / 4 + threadIdx.x];
+        }
+    }
+
     struct is_not_ignore {
         __host__ __device__
 
-        bool
-        operator()(const uint8_t x) const {
+            bool
+            operator()(const uint8_t x) const {
             return x != fsst::Symbol::ignore;
         }
     };

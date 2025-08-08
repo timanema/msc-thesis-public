@@ -68,7 +68,7 @@ int main(int argc, char* argv[]) {
     // Set bench settings
     constexpr int compression_iterations = 100;
     constexpr int decompression_iterations = 1;
-    constexpr bool strict_checking = false; // Exit program when a single decompression mismatch occurs, otherwise only report it
+    constexpr bool strict_checking = true; // Exit program when a single decompression mismatch occurs, otherwise only report it
 
     // Run benchmark (use_dir=true if all files in the directory must be used, otherwise uses first file only)
     const bool match = gtsst::bench::full_cycle_directory(directories, false, compression_iterations,
