@@ -180,7 +180,7 @@ namespace gtsst::fsst {
 
     struct SymbolTable {
         static const uint32_t hashTabSize = 1 << FSST_HASH_LOG2SIZE; // smallest size that incurs no precision loss
-        static const uint8_t maxSize = Symbol::skip; // TODO: might be a better way for this .. :)
+        static const uint8_t maxSize = Symbol::skip; // 255 is reserved for escape, 254 for padding, 253 to map padding to something else
         static const uint8_t maxSameRowTwo = 8;
         static const uint8_t maxRowsTwo = 32; // 32 because then there are no bank conflicts
         // TIM NOTE: added this to limit size of rows in shortCodes (for sparse matrix later)
@@ -283,6 +283,7 @@ namespace gtsst::fsst {
             assert(FSST_CODE_BASE + nSymbols < FSST_CODE_MAX);
             uint32_t len = s.length();
             s.set_code_len(FSST_CODE_BASE + nSymbols, len);
+            assert(s.code() != Symbol::ignore);
             if (len == 1) {
                 byteCodes[s.first()] = FSST_CODE_BASE + nSymbols + (1 << FSST_LEN_BITS); // len=1 (<<FSST_LEN_BITS)
             } else if (len == 2) {
@@ -461,7 +462,7 @@ namespace gtsst::fsst {
         }
 
         void finalize_simple_decreasing() {
-            assert(nSymbols <= 255);
+            assert(nSymbols <= SymbolTable::maxSize + 1);
             uint8_t newCode[256], rsum[8];
 
             rsum[7] = 0;

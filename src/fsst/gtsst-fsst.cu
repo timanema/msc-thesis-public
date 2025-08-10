@@ -157,6 +157,11 @@ namespace gtsst::fsst {
             pq.pop();
             st->add(q.symbol, sampleFrac == 128);
         }
+
+        // If this is the final iteration, make sure to add a character that maps padding (0xFE, to something else)
+        if (sampleFrac == 128) {
+            st->add(Symbol(Symbol::ignore, 0), true);
+        }
     };
 
     size_t simple_make_sample(uint8_t* sample_buf, const uint8_t* src, const size_t len) {

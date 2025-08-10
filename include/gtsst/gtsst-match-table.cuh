@@ -144,9 +144,6 @@ namespace gtsst::symbols {
                 }
             }
 
-            // Add ignore symbol so padding on the input side is properly matched
-            singleCodes[fsst::Symbol::ignore] = TinySymbol(fsst::Symbol::ignore);
-
             matchTable = SymbolMatchTable(shortCodes);
         }
 
@@ -186,10 +183,12 @@ namespace gtsst::symbols {
             if (twoByte != fsst::Symbol::escape)
                 return twoByte | (2 << 8);
 
+            // TODO: remove debug catch
             if (singleByte == fsst::Symbol::ignore) {
                 uint8_t x = sym.first();
                 idx += x;
                 idx -= x;
+                assert(false);
             }
 
             return singleByte | (1 << 8);

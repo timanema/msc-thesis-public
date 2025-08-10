@@ -188,7 +188,7 @@ namespace gtsst::compressors::compactionv5t {
                 uint16_t code = symbol_table.findLongestSymbol(s);
                 auto sym = (uint8_t)code;
                 auto sym_len = (uint8_t)(code >> 8);
-                uint8_t escape = sym == 255;
+                uint8_t escape = sym == fsst::Symbol::escape;
 
                 assert(out + 1 != active_out_block * sizeof(uint32_t)); // Checks for buffer overrun on escape
                 assert(sym != fsst::Symbol::ignore);
@@ -239,7 +239,7 @@ namespace gtsst::compressors::compactionv5t {
                 uint16_t code = symbol_table.findLongestSymbol(s);
                 auto sym = (uint8_t)code;
                 auto sym_len = (uint8_t)(code >> 8);
-                uint8_t escape = sym == 255;
+                uint8_t escape = sym == fsst::Symbol::escape;
 
                 assert(out + 1 != active_out_block * sizeof(uint32_t)); // Checks for buffer overrun on escape
                 assert(sym != fsst::Symbol::ignore);
@@ -300,7 +300,7 @@ namespace gtsst::compressors::compactionv5t {
         assert((uintptr_t)src % WORD_ALIGNMENT == 0); // Ensure 8-byte alignment of source
         assert((uintptr_t)tmp % TMP_WORD_ALIGNMENT == 0); // Ensure 4-byte alignment of tmp
         assert((uintptr_t)dst % TMP_WORD_ALIGNMENT == 0); // Ensure 4-byte alignment of dest
-        assert(m.symbol_table.singleCodes[fsst::Symbol::ignore].code() ==
+        assert(m.symbol_table.singleCodes[fsst::Symbol::ignore].code() !=
             fsst::Symbol::ignore); // Ensure that ignore symbol has been properly mapped
 
         // Active data

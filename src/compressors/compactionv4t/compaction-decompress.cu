@@ -79,7 +79,7 @@ namespace gtsst::compressors {
                 return gtsstErrorCorruptBlock;
             }
 
-            const uint32_t block_out = seq_decompress(decoder, block_mem, dst + out, block_size);
+            const uint32_t block_out = seq_decompress(decoder, block_mem, dst + out, block_size, true);
 
             // If output size doesn't match, the block is corrupt
             if (block_out != block_headers[block_id].uncompressed_size) {

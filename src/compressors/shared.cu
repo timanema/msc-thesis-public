@@ -2,7 +2,7 @@
 #include <iostream>
 
 namespace gtsst::compressors {
-    size_t seq_decompress(const fsst::DecodingTable& dec, const uint8_t* src, uint8_t* dst, const uint32_t len) {
+    size_t seq_decompress(const fsst::DecodingTable& dec, const uint8_t* src, uint8_t* dst, const uint32_t len, bool use_skip) {
         const uint8_t* src_lim = src + len;
         int i = 0;
         // int escapes = 0;
@@ -20,7 +20,7 @@ namespace gtsst::compressors {
             }
 
             // if skip, do nothing :)
-            if (cur == fsst::Symbol::skip) {
+            if (use_skip && cur == fsst::Symbol::skip) {
                 continue;
             }
 

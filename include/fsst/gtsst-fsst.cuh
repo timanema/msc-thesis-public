@@ -33,7 +33,7 @@ namespace gtsst::fsst {
         uint16_t number_of_symbols{}; // amount of symbols in the map (max 255)
         uint16_t len_histogram[FSST_CODE_BITS]{}; // lenHisto[x] is the amount of symbols of byte-length (x+1) in this
                                                   // SymbolTable
-        Symbol symbols[SymbolTable::maxSize]{};
+        Symbol symbols[SymbolTable::maxSize+1]{};
 
         // Encoding data
         Encoding encoding_data;
@@ -111,6 +111,10 @@ namespace gtsst::fsst {
         encoder->counters.restore1(bestCounters);
         make_table(bestTable, encoder->counters, sampleFrac);
         bestTable->finalize_simple_decreasing(); // renumber codes for more efficient compression
+
+        // Ensure no padding symbol is returned
+        uint8_t padding_lookup = bestTable->findLongestSymbol(Symbol(254, 0));
+        assert(padding_lookup != 255 && padding_lookup != 254);
 
         // Create encoding table
         const auto table = new EncodingTable<Encoding>(*bestTable);

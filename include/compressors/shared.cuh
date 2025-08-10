@@ -165,7 +165,7 @@ namespace gtsst::compressors {
         __syncthreads();
     }
 
-    size_t seq_decompress(const fsst::DecodingTable& dec, const uint8_t* src, uint8_t* dst, uint32_t len);
+    size_t seq_decompress(const fsst::DecodingTable& dec, const uint8_t* src, uint8_t* dst, uint32_t len, bool use_skip = false);
 
     inline bool data_contains(const uint8_t* src, const uint8_t b, const size_t size) {
         for (size_t i = 0; i < size; i++) {
