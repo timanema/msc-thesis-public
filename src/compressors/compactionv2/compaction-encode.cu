@@ -279,8 +279,9 @@ namespace gtsst::compressors::compactionv2 {
         // Checks
         assert((uintptr_t)src % WORD_ALIGNMENT == 0); // Ensure 8-byte alignment of source
         assert((uintptr_t)dst % TMP_WORD_ALIGNMENT == 0); // Ensure 4-byte alignment of dest
-        assert(m.symbol_table.singleCodes[fsst::Symbol::ignore].code() ==
-            fsst::Symbol::ignore); // Ensure that ignore symbol has been properly mapped
+        assert(m.symbol_table.singleCodes[fsst::Symbol::ignore].code() != fsst::Symbol::ignore &&
+               m.symbol_table.singleCodes[fsst::Symbol::ignore].code() !=
+                   fsst::Symbol::escape); // Ensure that ignore symbol has been properly mapped
 
         // Active data
         uint64_t spillover = 0;

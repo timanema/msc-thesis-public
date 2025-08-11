@@ -76,10 +76,6 @@ namespace gtsst::compressors {
             return gtsstSuccess;
         }
 
-        // TODO: remove this assertion
-        assert(!data_contains(sample_src, 254, config.input_buffer_size));
-        assert(!data_contains(sample_src, 255, config.input_buffer_size));
-
         // Some bookkeeping
         const uint64_t number_of_blocks = config.input_buffer_size / compactionv4::BLOCK_SIZE;
         const uint64_t working_block_size = number_of_blocks * compactionv4::TMP_OUT_BLOCK_SIZE;
